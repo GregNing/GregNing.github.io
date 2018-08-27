@@ -1,0 +1,24 @@
+
+// @import "font-awesome-sprockets";
+
+// $fa-font-path: if($fa-sass-asset-helper, "font-awesome/", "../fonts/font-awesome/") !default;
+// @import "font-awesome-compass";
+
+
+.list-inline {
+  margin-top: 1em;
+  padding-left: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+
+    a {
+      color: #655643;
+      font-weight: 700;
+
+      .fa-circle {
+        color: rgba(255,255,255,.5);
+      }
+    }
+  }
+}

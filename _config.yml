@@ -7,9 +7,8 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            Greg's Note
-tagline:          'Welcome'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            Greg's Blog
+description:      'Hello Welcome to Greg Blog!'
 url:              http://hyde.getpoole.com
 baseurl:          /
 
@@ -19,9 +18,26 @@ author:
 
 paginate:         5
 
-# Custom vars
-version:          2.1.0
-
 github:
   repo:  https://github.com/GregNing
-plugins: [jekyll-paginate,jekyll-gist]
+
+sass:
+    sass_dir: _assets/stylesheets
+    style: compressed
+
+# assets:
+#   caching:
+#     path: ".jekyll-cache/assets/stylesheets"
+#     type: file # Possible values: memory, file
+#     enabled: true
+#   compress:
+#     css: true
+#     js: true
+#   sources:
+#     # - _assets
+#     - _assets/stylesheets/fonts
+#     - _assets/stylesheets/font-awesome
+
+plugins:
+  - jekyll-assets
+  - jekyll-paginate

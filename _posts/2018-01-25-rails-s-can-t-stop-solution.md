@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: post
 title: 'Rails s can't Stop server is already running 解決方法'
 date: 2018-01-25 14:59
 comments: true
-categories: 
+categories:
 ---
 使用以下指令離開終端機
 
@@ -23,4 +23,4 @@ categories:
 	kill -9 $(lsof -i tcp:3000 -t)
 
 重開之前開server的那台終端機即可完成(restart server)
-來源:https://stackoverflow.com/questions/15088163/cant-stop-rails-server
+來源:https://stackoverflow.com/questions/15088163/cant-stop-rails-server -->
