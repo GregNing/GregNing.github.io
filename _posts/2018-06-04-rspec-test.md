@@ -73,24 +73,39 @@ allow_any_instance_of 用於包裝一個類存用該方法
 # 用意是讓 User 這個 model 執行 save 時都一律回傳 false, 以便測試到失敗的例子
 allow_any_instance_of(User).to receive(:save).and_return(false)
 ```
-`before(:each)` 每段it之前執行，預設寫 before 就是 before(:each)。
+### stub request(使用)
+接下來我們要測試一段請求的回傳值
+範例如下:
+```
+RestClient.send(:method_name, "http://products/#{params['id']}/index", {status: 'active'}).json_data
+
+descrite '#getProduct'
+  before do
+    stub_request(:get, "http://products/#{product.id}/index")
+      .with(query: { status: 'active' })
+      .to_return(status: 200, body: data.to_json, headers: {})
+  end
+ # data 代表回傳結果請自行定義
+ # do somethongs
+end
+
+```
+
+### 請使用let 和 let!宣告變數做使用
+`let` 會在使用到此程式碼才會執行(適用於不需初始化)<br>
+`let!` 做使用一開始就會創建使用者
+```
+let!(:user) do
+  create(:user, name: 'Greg', email: 'XXXXX@gmail.com')
+end
+```
+{% capture string_with_newlines %}
+### 常用語法可以幫助你讓code變得更簡潔
+`before(:each)` 每段it之前執行，預設寫 before 就是 before(:each)
 `before(:all)` 整段describe前只執行一次
 `after(:each)` 每段it之後執行
 `after(:all)` 整段describe後只執行一次
-### 建議使用`after`or`before`
-
-### 請使用let 和 let!宣告變數做使用
-`let`會在使用到此程式碼才會執行(適用於不需初始化)
-```c let! 做使用 一開始就會創建使用者
-let!(:user) do
-  create(
-   :user,
-   name: 'Greg',
-   email: 'XXXXX@gmail.com',
-   )
-end
-```
-
+### 建議使用`after`or`before` 就好 [Rspec-style](https://github.com/reachlocal/rspec-style-guide#good-example-2)
 ### RSPEC 配置返回方式使用
 `and_return` 返回值
 `and_raise` 超出異常
@@ -98,13 +113,15 @@ end
 `and_yield` 接受區參數
 `and_call_original` 調用原先的方法
 
-使用以下指令執行測試使用
-`rspec filename.rb` 預設不產⽣⽂件
-`rspec filename.rb -fd` 輸出 specdoc ⽂件
-`rspec filename.rb -fh` 輸出 html ⽂件
+##### 使用以下指令執行測試使用
+`bunde exec rspec filename.rb` 預設不產⽣⽂件
+`bunde exec rspec filename.rb -fd` 輸出 specdoc ⽂件
+`bunde exec rspec filename.rb -fh` 輸出 html ⽂件
 
 [Rspec Class](https://relishapp.com/rspec/rspec-mocks/docs/verifying-doubles/using-a-class-double)
 [RSPEC參考](https://mgleon08.github.io/blog/2016/01/29/rspec-plus-factory-girl/)
 [Mock](https://ihower.tw/rails/files/ihower-rspec-mock.pdf)
 [ihower 文件](https://ihower.tw/rails/files/ihower-rspec.pdf)
 [ihower rspec講解](https://ihower.tw/rails/testing.html)
+{% endcapture %}
+{{ string_with_newlines | newline_to_br }}

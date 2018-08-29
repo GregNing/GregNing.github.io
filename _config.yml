@@ -1,6 +1,10 @@
 # Dependencies
-markdown:         kramdown
-rouge:      pygments
+markdown: kramdown
+# markdown: redcarpet
+rouge: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty
@@ -22,7 +26,7 @@ github:
   repo:  https://github.com/GregNing
 
 sass:
-    sass_dir: _assets/stylesheets
+    sass_dir: assets/stylesheets
     style: compressed
 
 # assets:
