@@ -18,7 +18,8 @@ RSpec.describe "A test double" do
   end
 end
 ```
-### 我們可以使⽤ double 產⽣假物件 `@user = double("user", :name => "Greg")`
+### 我們可以使⽤ double 產⽣假物件
+`@user = double("user", :name => "Greg")`
 ### [Method stubs](https://relishapp.com/rspec/rspec-mocks/v/2-4/docs/method-stubs) 假對象（test double）的方法，也可以模擬真實對象（real object）
 ```
 describe "a simple stub with a return value" do
@@ -86,11 +87,10 @@ descrite '#getProduct'
       .to_return(status: 200, body: data.to_json, headers: {})
   end
  # data 代表回傳結果請自行定義
- # do somethongs
+ # do somethong
 end
 
 ```
-
 ### 請使用let 和 let!宣告變數做使用
 `let` 會在使用到此程式碼才會執行(適用於不需初始化)<br>
 `let!` 做使用一開始就會創建使用者
@@ -105,14 +105,13 @@ end
 `before(:all)` 整段describe前只執行一次
 `after(:each)` 每段it之後執行
 `after(:all)` 整段describe後只執行一次
-### 建議使用`after`or`before` 就好 [Rspec-style](https://github.com/reachlocal/rspec-style-guide#good-example-2)
+### 建議使用`after`or`before` 參考[Rspec-style](https://github.com/reachlocal/rspec-style-guide#good-example-2)
 ### RSPEC 配置返回方式使用
 `and_return` 返回值
 `and_raise` 超出異常
 `and_throw` 拋出symbol
 `and_yield` 接受區參數
 `and_call_original` 調用原先的方法
-
 ##### 使用以下指令執行測試使用
 `bunde exec rspec filename.rb` 預設不產⽣⽂件
 `bunde exec rspec filename.rb -fd` 輸出 specdoc ⽂件
@@ -125,3 +124,5 @@ end
 [ihower rspec講解](https://ihower.tw/rails/testing.html)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
+
+{% include post_tag.html %}

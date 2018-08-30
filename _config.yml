@@ -13,14 +13,17 @@ permalink:        pretty
 # Setup
 title:            Greg's Blog
 description:      'Hello Welcome to Greg Blog!'
-url:              http://hyde.getpoole.com
+url:              https://github.com/GregNing
 baseurl:          /
-
+# Author
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name: 'Greg'
+  url: https://github.com/GregNing
 
 paginate:         5
+# tags
+tag:
+    jekyll: https://jekyllrb.com/
 
 github:
   repo:  https://github.com/GregNing
