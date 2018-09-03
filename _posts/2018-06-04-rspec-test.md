@@ -4,7 +4,7 @@ title: 'RSPEC測試執行以及Mock介紹'
 description: '介紹RSPEC使用'
 date: 2018-06-04 15:30
 comments: true
-categories:
+categories: rspec
 ---
 Mock和stub都屬於Test double，模擬測試前者是模擬特定對象測試行為後者為方法。
 可以使用gem安裝[gem rspec-mocks](https://github.com/rspec/rspec-mocks)
