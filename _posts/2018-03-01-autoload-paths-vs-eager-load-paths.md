@@ -1,23 +1,24 @@
 ---
 layout: post
-title: '使用 mixin 以及 autoload_paths vs eager_load_paths解說'
+title: 'use mixin and autoload_paths vs eager_load_paths'
 date: 2018-03-01 18:31
 comments: true
-categories: 
+categories:
+description: '使用 mixin 以及 autoload_paths vs eager_load_paths解說'
 ---
-先進行 mixin 範例
-如果不想使用mixin請使用以下方式直接在Controller新增 Controller級的helper
-[helper-method-and-view-context解說](http://blog.xdite.net/posts/2014/06/16/helper-method-and-view-context)
-```c Controller
+> 先進行 mixin 範例<br>
+> 如果不想使用mixin請使用以下方式直接在Controller新增 Controller級的helper
+[helper-method-and-view-context解說](http://blog.xdite.net/posts/2014/06/16/helper-method-and-view-context).
+```ruby
 helper_method :current_cart
 def current_cart
   @current_cart ||= find_cart
 end
 ```
-在 `lib/modules/common_helper.rb` 先新增我們所需要的helper相關資訊
-將Cart相關資訊存在session裡面
-```c common_helper.rb 
-module CommonHelper      
+在 `lib/modules/common_helper.rb` 先新增我們所需要的helper相關資訊<br>
+將Cart相關資訊存在session裡面 `common_helper.rb`
+```ruby
+module CommonHelper
   def current_cart
     @current_cart ||= find_cart
   end
@@ -32,15 +33,15 @@ module CommonHelper
 end
 ```
 接下來在 `config/application.rb`新增[自動載入方式](https://ihower.tw/rails/environments-and-bundler.html#sec6)這樣就完成了可以在Controller or View 呼叫
-```c application.rb
+```ruby
 config.eager_load_paths << "#{Rails.root}/lib/modules"
 ```
-`eager_load_paths` 目錄是指 Rails 會自動根據命名慣例載入，而 Ruby 的 $LOAD_PATH 常數則是 require 時會尋找的目錄。像 lib 這個目錄 Rails 預設就只有加到 $LOAD_PATH 之中，所以你放在 lib 的檔案是可以 require 到，但是因為預設沒有加到 `eager_load_paths` 之中，所以沒有自動載入的機制。
+`eager_load_paths`目錄是指 Rails 會自動根據命名慣例載入，而 Ruby 的 $LOAD_PATH 常數則是 require 時會尋找的目錄。像 lib 這個目錄 Rails 預設就只有加到 $LOAD_PATH 之中，所以你放在 lib 的檔案是可以 require 到，但是因為預設沒有加到`eager_load_paths`之中，所以沒有自動載入的機制。
 
 若要查看是否有載入請在`rails c`
 輸入這行`ActiveSupport::Dependencies.autoload_paths` OR
 `Rails.application.config.assets.paths`即可
-```c terminal
+```ruby
 > rails c
 > ActiveSupport::Dependencies.autoload_paths
 [
@@ -67,30 +68,29 @@ config.eager_load_paths << "#{Rails.root}/lib/modules"
 ]
 ```
 ### Controller 裡使用
-```c Controller
+```ruby
 def add_to_cart
 	extend CommonHelper
-	current_cart.add_product_to_cart(@product)    
+	current_cart.add_product_to_cart(@product)
 end
 ```
 ### View 裡使用
-```c View
+```ruby
 <% extend CommonHelper %>
 ```
-`include` 提供了混合它的Class的實例方法。(動態使用)
-`extend` 擴展為混合Class提供類方法。(靜態使用)
-建議使用 `extend` 取代 `include` 這樣就不用include 在 new 了
-[extend or include](https://stackoverflow.com/questions/15097929/ruby-module-require-and-include)
+* `include` 提供了混合它的Class的實例方法。(動態使用)
+* `extend` 擴展為混合Class提供類方法。(靜態使用)
+* 建議使用 `extend` 取代 `include` 這樣就不用include 在 new 了<br>
+[extend or include](https://stackoverflow.com/questions/15097929/ruby-module-require-and-include)<br>
 [extend include 解說](http://blog.niclin.tw/posts/1076821)
-****
 ### autoload_paths 以及 eager_load_paths使用方式
-autoload_paths在 Rails版本 < 5以下做使用以下任一種方式即可使用
-```c config/application.rb
-config.autoload_paths += Dir["#{config.root}/lib/**"] 
+autoload_paths在 Rails版本 < 5以下做使用以下任一種方式即可使用 in `config/application.rb`
+```ruby
+config.autoload_paths += Dir["#{config.root}/lib/**"]
 config.autoload_paths += %W(#{config.root}/lib/modules)
 ```
-eager_load_paths 在 Rails版本 >= 5使用以下任一種方式即可使用
-```c config/application.rb
+eager_load_paths 在 Rails版本 >= 5使用以下任一種方式即可使用，in `config/application.rb`
+```ruby
 config.eager_load_paths << "#{Rails.root}/lib/modules"
 config.eager_load_paths += %W(#{config.root}/lib/modules)
 config.eager_load_paths += %W(
@@ -98,10 +98,12 @@ config.eager_load_paths += %W(
   #{config.root}/lib/my_others
 )
 ```
-上production因安全所需會自動取消autoload_paths
-所以在此建議使用`eager_load_paths` 上production會比以較不會發生異常
-總結：autoload_paths就是當使用某個常量（比如module class時），rails會調用const_missing，然後在autoload_paths的數組目錄中查找，找到該常量後加載使用。簡單認為，在使用時，才加載相關代碼。 優點：能夠快速啟動rails，在啟動rails時減少加載代碼，在使用時臨時加載進來。eager_load_paths在rails啟動時，就把eager_load_paths中的目錄代碼加載進來.production環境時建議使用eager_load_paths加載。這樣雖然啟動的 時候速度會變慢，因為要加載更多代碼，但是，這樣加載預熱後，在用戶使用程序時，就能很快的調用到相關代碼，因為已經在啟動的時候加載好了。 關於lib目錄中的代碼文件根據實際情況需要，選擇加載方式。
+{% capture string_with_newlines %}
+上production因安全所需會自動取消autoload_paths，所以在此建議使用`eager_load_paths` 上production會比以較不會發生異常。
+總結：`autoload_paths`就是當使用某個常量（比如module class時），rails會調用const_missing，然後在`autoload_paths`的數組目錄中查找，找到該常量後加載使用。簡單認為，在使用時，才加載相關代碼。 優點：能夠快速啟動rails，在啟動rails時減少加載代碼，在使用時臨時加載進來。`eager_load_paths`在rails啟動時，就把`eager_load_paths`中的目錄代碼加載進來.production環境時建議使用，`eager_load_paths`加載。這樣雖然啟動的 時候速度會變慢，因為要加載更多代碼，但是，這樣加載預熱後，在用戶使用程序時，就能很快的調用到相關代碼，因為已經在啟動的時候加載好了。 關於lib目錄中的代碼文件根據實際情況需要，選擇加載方式。
 [autoload_paths vs eager_load_paths詳細說明](https://stackoverflow.com/questions/19773266/confusing-about-autoload-paths-vs-eager-load-paths-in-rails-4)
 [Don't forget about eager_load when extending autoload paths](https://blog.arkency.com/2014/11/dont-forget-about-eager-load-when-extending-autoload/)
 [autoload_paths or eager_load其他使用方式](http://hakunin.com/rails3-load-paths )
-[rails3中autoload_paths加载详解](http://www.mojidong.com/rails/2013/03/16/rails3-autoload_paths-principle/)
+[rails3中autoload_paths加載詳細說明](http://www.mojidong.com/rails/2013/03/16/rails3-autoload_paths-principle/)
+{% endcapture %}
+{{ string_with_newlines | newline_to_br }}

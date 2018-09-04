@@ -3,7 +3,7 @@ layout: post
 title: 'git squash (將眾多的Commit 簡略化)'
 date: 2018-05-17 17:37
 comments: true
-description: 'Git squash 介紹'
+description: 'git squash 介紹'
 categories:
 ---
 #### `git squash` 合併目前的commit

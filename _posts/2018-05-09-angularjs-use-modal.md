@@ -22,7 +22,7 @@ ng-click="submitConfirm()">
 ```
 ```
 $rootScope.currentModal = $modal.open({
-	templateUrl: '/messages/confirm/modal?messages=' + message
+  templateUrl: '/messages/confirm/modal?messages=' + message
 })
 //關閉視窗後所要做的事情
 $rootScope.currentModal.result.then(function(datapassedinwhileclosing){
@@ -44,7 +44,7 @@ $rootScope.cancel = function () {
 //設定按鈕關閉(closure)
 //close(result) - a method that can be used to close a modal, passing a result
 $rootScope.submitConfirm = function () {
-	$rootScope.currentModal.close()
+  $rootScope.currentModal.close()
 }
 ```
 {% capture string_with_newlines %}

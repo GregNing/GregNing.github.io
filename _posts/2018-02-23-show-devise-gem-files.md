@@ -1,26 +1,27 @@
 ---
 layout: post
-title: '顯示 devise 有關的檔案'
+title: 'show devise gem files'
 date: 2018-02-23 16:41
 comments: true
-categories: 
+categories:
+description: '顯示 devise 有關的檔案'
 ---
-# 如何顯示關於[devise](https://github.com/plataformatec/devise#getting-started) controller 以及 view
+### 如何顯示關於[devise](https://github.com/plataformatec/devise#getting-started) controller 以及 view
 顯示 Views
-```c show View
+```ruby
 #可以叫出 devise views
 rails g devise:views
 #這是叫出繼承devise的 users views
 rails g devise:views users
 ```
 顯示 Controllers
-```c show Controllers
+```ruby
 #顯示繼承devise controller的 users controller
 rails g devise:controllers users
 ```
 ## 如果有自訂 controller要使用，而不要使用預設devise路徑請使用以下方式進行處理
-```c config/routes.rb
-devise_for :user, controllers: {  
+```ruby
+devise_for :user, controllers: {
   passwords: 'users/passwords',
   registrations: 'users/registrations',
   sessions: 'users/sessions'
