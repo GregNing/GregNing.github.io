@@ -8,7 +8,7 @@ categories:
 [AASM](https://github.com/aasm/aasm)，是一個狀態管理的gem，可以更好的幫助你管理各種在不同時間的不同狀態。
 首先在Gemfile安裝 `gem 'aasm'`
 在要使用的model裡include，在此要記住`model`要有一個欄位為名為`aasm_state`好方便記住狀態。
-```
+```ruby
 class Order < ApplicationRecord
 	include AASM
   aasm do
@@ -43,7 +43,7 @@ end
 `initial` 為一開始的初始狀態(model 一建立之後)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
-```
+```ruby
 event :make_payment, after_commit: :pay! do
 	transitions from: :order_placed, to: :paid
 end
@@ -55,7 +55,7 @@ end
 請使用Rails 環境執行`rails c`
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
-```
+```ruby
 order = Order.new
 order.order_placed? # true
 order

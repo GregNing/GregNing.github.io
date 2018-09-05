@@ -7,20 +7,22 @@ categories:
 description: 'Angularjs use modal settings(使用 Angularjs 設定 Bootstrap視窗)'
 ---
 `<%= t('message')%>` 是用I18n轉換而來
-```
+```erb
 <div class="modal-footer">
-<button type="button" class="btn btn-cancle"
-data-dismiss="modal" ng-click="cancel()">
+<button type="button"
+        class="btn btn-cancle"
+        data-dismiss="modal"
+        ng-click="cancel()">
 <%= t('message')%>
 </button>
 <button class="btn btn-confirm"
-type="button"
-name="button"
-ng-click="submitConfirm()">
+        type="button"
+        name="button"
+        ng-click="submitConfirm()">
 </button>
 </div>
 ```
-```
+```js
 $rootScope.currentModal = $modal.open({
   templateUrl: '/messages/confirm/modal?messages=' + message
 })

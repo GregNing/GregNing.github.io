@@ -9,7 +9,7 @@ categories: rspec
 Mock和stub都屬於Test double，模擬測試前者是模擬特定對象測試行為後者為方法。
 可以使用gem安裝[gem rspec-mocks](https://github.com/rspec/rspec-mocks)
 ### 首先介紹 [Test Double](https://relishapp.com/rspec/rspec-mocks/v/3-6/docs/basics/test-doubles) 為假物件的統稱，Dummy、Fake、Stub、Mock 與 Spy 都算 Test Double。
-```
+```ruby
 RSpec.describe "A test double" do
   it "returns canned responses from the methods named in the provided hash" do
     dbl = double("Some Collaborator", :foo => 3, :bar => 4) # 建立一個dbl對象且有屬性
@@ -21,7 +21,7 @@ end
 ### 我們可以使⽤ double 產⽣假物件
 `@user = double("user", :name => "Greg")`
 ### [Method stubs](https://relishapp.com/rspec/rspec-mocks/v/2-4/docs/method-stubs) 假對象（test double）的方法，也可以模擬真實對象（real object）
-```
+```ruby
 describe "a simple stub with a return value" do
   context "specified in a block" do
     it "returns the specified value" do
@@ -50,7 +50,7 @@ describe "a simple stub with a return value" do
 end
 ```
 ### Mock
-``` rspec
+```ruby
 @gateway = double("ezcat")
 # 預期等會 @gateway 必須被呼叫到 deliver ⽅法
 expect(@gateway).to receive(:deliver).with(@user).and_return(true)
@@ -77,7 +77,7 @@ allow_any_instance_of(User).to receive(:save).and_return(false)
 ### stub request(使用)
 接下來我們要測試一段請求的回傳值
 範例如下:
-```
+```ruby
 RestClient.send(:method_name, "http://products/#{params['id']}/index", {status: 'active'}).json_data
 
 descrite '#getProduct'
@@ -94,7 +94,7 @@ end
 ### 請使用let 和 let!宣告變數做使用
 `let` 會在使用到此程式碼才會執行(適用於不需初始化)<br>
 `let!` 做使用一開始就會創建使用者
-```
+```ruby
 let!(:user) do
   create(:user, name: 'Greg', email: 'XXXXX@gmail.com')
 end

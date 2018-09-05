@@ -9,7 +9,7 @@ description: 'vs-code-development-mode-environment-synchronization'
 首先使用`VS Code`安裝[SFTP](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp)
 安裝完成再使用`Ctrl+Shift+P `指令搜尋`SFTP: config`點選去他會產生一個`sftp.json`檔案在.vscode資料夾裡面。<br>
 使用帳號密碼以及port
-```
+```js
 {
 "host": "遠端連線IP網址",
 "port": 22,//在此需填寫對方的port
@@ -37,7 +37,7 @@ description: 'vs-code-development-mode-environment-synchronization'
 }
 ```
 使用ssh key做認證，而不使用密碼只要使用帳號以及ssh key擺放位置
-```
+```js
 {
 "host": "遠端連線IP網址",
 "username": "工作站姓名",

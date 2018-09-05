@@ -8,9 +8,9 @@ description: 'ROR use mongodb'
 ---
 ## Install Mongo before you need to remove all the active record related entries from `application.rb` and `config/initializers/*`
 ### Step1 Remove database adapter gems from your Gemfile
-install in Gemfile`gem 'sqlite3'`
+install in Gemfile `gem 'sqlite3'`
 ### Step2 Remove require 'rails/all' and Add below
-```
+```ruby
 #require 'rails/all'
 require "action_controller/railtie"
 require "action_mailer/railtie"
@@ -20,7 +20,7 @@ require `"rails/test_unit/railtie"`
 ### Step3 Delete `database.ym , schema.rb` and all the migrations
 ### Step4 Delete migration checks from `test/test_helper.rb`
 ### Step5 Delete all activerecord related configuration from `config/environments`
-```
+```conf
 # config.active_record.migration_error = :page_load
 ```
 in `config/environments/production.rb` setting `# config.active_record.dump_schema_after_migration = false`
@@ -29,7 +29,7 @@ in Gemfile `gem 'mongoid', '~> 6.1.0'`<br>
 User `rails g mongoid:config` create `config/initializers/mongoid.rb`and Add below
 `Mongoid.load!(File.expand_path("config/mongoid.yml", Dir.pwd))`<br>
 in `application.rb` setting
-```
+```ruby
 config.generators do |g|
   g.orm :mongoid
 end

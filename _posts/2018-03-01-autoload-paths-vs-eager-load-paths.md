@@ -70,12 +70,12 @@ config.eager_load_paths << "#{Rails.root}/lib/modules"
 ### Controller 裡使用
 ```ruby
 def add_to_cart
-	extend CommonHelper
-	current_cart.add_product_to_cart(@product)
+  extend CommonHelper
+  current_cart.add_product_to_cart(@product)
 end
 ```
 ### View 裡使用
-```ruby
+```erb
 <% extend CommonHelper %>
 ```
 * `include` 提供了混合它的Class的實例方法。(動態使用)

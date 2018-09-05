@@ -12,47 +12,47 @@ Rails Falsh hash會儲存在session中，當重新request頁面時，會從sessi
 in `app\helpers\flashes_helper.rb`
 ```ruby
 FlashesHelper
-	FLASH_CLASS = {alert: "danger", notice: "success", warning: "warning"}.freeze
-		def flash_class(key)
-			FLASH_CLASS.fetch key.to_sym, key
-		end
-		def user_facing_flashes
-			flash.to_hash.slice "alert", "notice", "warning"
-		end
+  FLASH_CLASS = {alert: "danger", notice: "success", warning: "warning"}.freeze
+  def flash_class(key)
+    FLASH_CLASS.fetch key.to_sym, key
+  end
+
+  def user_facing_flashes
+    flash.to_hash.slice "alert", "notice", "warning"
+  end
 end
 ```
-```c app\views\common\_flashes.html.erb
+
+```erb
 <% if flash.any? %>
-	<% user_facing_flashes.each do |key,value| %>
-		<div class="alert flashbar alert-dismissable alert-<%= flash_class(key) %>">
-		<button class="close" data-dismiss="alert">X</button>
-		<%= value %>
-		</div>
-	<% end %>
+  <% user_facing_flashes.each do |key,value| %>
+    <div class="alert flashbar alert-dismissable alert-<%= flash_class(key) %>">
+	  <button class="close" data-dismiss="alert">X</button>
+	  <%= value %>
+	</div>
+  <% end %>
 <% end %>
 ```
-你可以在layout去render它
-```c app\views\layout\application.html.erb
+你可以在layout去render它 `app\views\layout\application.html.erb`
+```erb
 <div class="container-fluid">
-		<div class="row">
-			<%= render "common/navbar" %>
-			<%= render 'common/flashes' %>
-			<%= yield %>
-		</div>
+  <div class="row">
+    <%= render "common/navbar" %>
+	<%= render 'common/flashes' %>
+	<%= yield %>
+  </div>
 </div>
-			<%= render 'common/footer' %>
+<%= render 'common/footer' %>
 ```
-剛剛有提到因 Rails 裡面預設的flash_types只有notice & alert
-所以要記得在controller 加上
-```c app\controller\application_controller.rb
+剛剛有提到因 Rails 裡面預設的flash_types只有notice & alert，所以要記得在`app\controller\application_controller.rb`加上
+```rb
 class ApplicationController < ActionController::Base
-	add_flash_types :warning
+  add_flash_types :warning
 end
 ```
-這樣才可以在View正確顯示warring方式
-最後讓我們直接在Controller裡面呼叫
-```c app\controller\example_controller.rb
+這樣才可以在View正確顯示warring方式，最後讓我們直接在`app\controller\example_controller.rb`裡面呼叫。
+```rb
 def udpate
-	redirect_to examples_path, warning: "warning!"
+  redirect_to examples_path, warning: "warning!"
 end
 ```

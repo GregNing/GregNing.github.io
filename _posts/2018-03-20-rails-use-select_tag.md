@@ -8,15 +8,15 @@ description: 'Rails select_tag 介紹以及使用ajax方式不使用remote: true
 ---
 我們不用 [simple_form](https://github.com/plataformatec/simple_form) 表單去做處理而是使用原始Rails所用的select_tag。<br>
 使用[url_for](https://apidock.com/rails/ActionView/RoutingUrlFor/url_for)
-```
+```erb
 <%= url_for(action: 'find', controller: 'books') %>
 ```
 使用[select_tag](https://apidock.com/rails/ActionView/Helpers/FormTagHelper/select_tag)
-```ruby
+```erb
 <%= select_tag(:school_or_org, options_for_select([ ['school', "school"], ['non-profit', "non-profit"]] ), {:class => 'form-control'})  %>
 ```
 首先使用 [select_tag](https://apidock.com/rails/ActionView/Helpers/FormTagHelper/select_tag)實作，以下為原生使用方式。
-```ruby
+```erb
 <%= select_tag(:school_or_org, options_for_select([ ['school', "school"], ['non-profit', "non-profit"]] ), {:class => 'form-control'})  %>
 我們稍做修改 (1)
 <% eval(item.quantity).each do |k, v|  %>
@@ -26,8 +26,7 @@ remote: true,
 url: cart_item_path(item.product_id),
 progress_bar: "progress_bar_div_id",
 update: "message_div_id",
-method: :patch}
-%>
+method: :patch} %>
 讓我們在做一次修改 (2)
 <%= select_tag 'quantity', options_for_select(1..@producthash[k.to_s] , v),
 onchange: "javascript: cartitem_tweak.changeCartitemquantity(#{item.product_id},#{k.to_json},this.value);" ,class: "quantity-select"%>
@@ -82,7 +81,7 @@ changeCartitemquantity: changeCartitemquantity,
 </script>
 ```
 Controller 中使用直接返回你要的 `example.js.erb`
-```
+```ruby
 ....省略
 respond_to do |format|
 format.js { render "example"}
