@@ -6,6 +6,8 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+gems: ["jekyll-paginate"]
+
 # Permalinks
 permalink:        pretty
 # relative_permalinks: true
@@ -31,20 +33,3 @@ github:
 sass:
     sass_dir: assets/stylesheets
     style: compressed
-
-# assets:
-#   caching:
-#     path: ".jekyll-cache/assets/stylesheets"
-#     type: file # Possible values: memory, file
-#     enabled: true
-#   compress:
-#     css: true
-#     js: true
-#   sources:
-#     # - _assets
-#     - _assets/stylesheets/fonts
-#     - _assets/stylesheets/font-awesome
-
-plugins:
-  - jekyll-assets
-  - jekyll-paginate
