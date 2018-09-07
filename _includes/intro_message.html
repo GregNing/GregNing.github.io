@@ -1,7 +1,7 @@
 <hr>
 <div class="message">
     <div class="profile-img">
-        <img src="{{ site.url }}/public/profile_img.jpg" >
+        <img src="{{ base.url | prepend: site.auth.url }}/public/profile_img.jpg" >
     </div>
     <div class="intro-message">
         Hello I am Greg! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
