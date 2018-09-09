@@ -6,7 +6,7 @@ comments: true
 categories:
 description: 'rails sanitize'
 ---
-`sanitize`
+[Rails HTML Sanitizers](https://apidock.com/rails/ActionView/Helpers/SanitizeHelper/sanitize)
 ```rb
 filter_words = "Greg'\bs works" # \b: 表示退格鍵
 ActionController::Base.helpers.sanitize(filter_words
@@ -17,7 +17,6 @@ ActionController::Base.helpers.sanitize("<script>I'am script</script>")
 ```
 {% capture string_with_newlines %}
 [Ruby 正規則表示式](http://www.runoob.com/ruby/ruby-regular-expressions.html)
-[sanitize helpers API](https://apidock.com/rails/ActionView/Helpers/SanitizeHelper/sanitize)
 [rails sanitize](https://stackoverflow.com/questions/32553330/sanitize-helper-in-rails)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
