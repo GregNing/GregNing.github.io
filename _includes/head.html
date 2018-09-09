@@ -16,11 +16,13 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/main.css">
-  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/hyde.css">
-  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/font-awesome/font-awesome.css">
+{% if site.custom_css %}
+  {% for stylesheet in site.custom_css %}
+    <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
+
+  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/font-awesome/font-awesome.css" media="screen" type="text/css">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ prepend: site.baseurl }}public/apple-touch-icon-144-precomposed.png">

@@ -1,17 +1,18 @@
 ---
 layout: post
-title: 'MongoDB 探討 BSON::Objectid'
+title: 'MongoDB BSON::Objectid Introduction'
 date: 2018-07-27 01:17
 comments: true
 categories:
+description: 'MongoDB 探討 BSON::Objectid'
 ---
 ## 介紹mongodb的主鍵(key)所組成的構造為什麼是一串24位的字串
 
 ### ObjectId is a 12-byte BSON type, constructed using:
 
-#### 4-byte value representing the seconds since the Unix epoch,
-#### 3-byte machine identifier,
-#### 2-byte process id, and
+#### 4-byte value representing the seconds since the Unix epoch.
+#### 3-byte machine identifier.
+#### 2-byte process id.
 #### 3-byte counter, starting with a random value.
 ObjectId: `BSON::ObjectId('5b59964a9791deb92e0001da')`
 
@@ -37,5 +38,5 @@ i = Time.now.to_i # 會轉成10進制
 t = Time.at(i) # 藉由 10 進制取得時間
 ```
 
-[BSON::ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/)
+[BSON::ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/)<br>
 [Mongodb ObjectID 生成](https://www.cnblogs.com/xjk15082/archive/2011/09/18/2180792.html)

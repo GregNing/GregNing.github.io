@@ -4,7 +4,7 @@ markdown            : kramdown
 redcarpet:
   extensions        : ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 highlighter         : rouge
-gems                : ["jekyll-paginate", "jekyll-assets"]
+plugins             : ["jekyll-paginate", "jekyll-assets"]
 
 # Permalinks
 permalink           : pretty
@@ -19,7 +19,7 @@ author:
   name              : 'Greg'
   url               : https://github.com/GregNing
 
-paginate            : 5
+paginate            : 8
 # tags
 tag:
   jekyll            : https://jekyllrb.com/
@@ -30,3 +30,9 @@ github:
 sass:
   sass_dir          : assets/stylesheets
   style             : compressed
+
+custom_css:
+  - main
+  - poole
+  - syntax
+  - hyde

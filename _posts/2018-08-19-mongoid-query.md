@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 'Mongodb query operator(條件查詢)'
+title: 'Mongodb query operator'
 date: 2018-08-19 23:35
 comments: true
 categories:
+description: 'Mongodb query operator(條件查詢)'
 ---
 使用 Ruby 進行 mongodb query 時候可以參考以下使用
 例: 我們有個Model叫做Pet

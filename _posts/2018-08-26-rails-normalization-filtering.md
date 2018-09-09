@@ -4,6 +4,7 @@ title: 'rails 特殊字元過濾(白名單)'
 date: 2018-08-26 17:21
 comments: true
 categories:
+description: 'rails sanitize'
 ---
 `sanitize`
 ```rb
