@@ -4,6 +4,7 @@ title: 'Check ssh key path'
 date: 2018-05-02 04:53
 comments: true
 categories:
+tags: ssh
 ---
 ```
 cat ~/.ssh/id_rsa.pub Or cat ~/.ssh/id_dsa.pub

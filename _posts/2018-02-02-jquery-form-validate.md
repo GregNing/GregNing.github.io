@@ -4,6 +4,7 @@ title: 'Ruby Jquery Form Validation Plugin'
 date: 2018-02-02 08:42
 comments: true
 categories:
+tags: Rails
 ---
 {% capture string_with_newlines %}
 可以在這裡找到相關 [Form Style](https://www.sitepoint.com/10-jquery-form-validation-plugins/)

@@ -5,6 +5,7 @@ date: 2018-07-27 01:17
 comments: true
 categories:
 description: 'MongoDB 探討 BSON::Objectid'
+tags: Mongod
 ---
 ## 介紹mongodb的主鍵(key)所組成的構造為什麼是一串24位的字串
 

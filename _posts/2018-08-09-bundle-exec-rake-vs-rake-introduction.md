@@ -5,6 +5,7 @@ date: 2018-08-09 01:08
 comments: true
 categories:
 description: 'bundle exec rake vs rake 介紹'
+tags: Ruby
 ---
 `bundle exec rake`會根據你所使用的 Gemfile 去做執行動作。<br>
 `rake`單純使用`gem install rake` 去做執行不會依據Gemfile去做執行。

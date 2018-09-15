@@ -5,6 +5,7 @@ date: 2018-02-04 14:22
 comments: true
 categories:
 description: 'Ruby On Rails DDos防禦'
+tags: Ruby
 ---
 如何防禦某特定IP同一時間內存取太多次會被封鎖
 使用[rack-attack](https://github.com/kickstarter/rack-attack)<br>

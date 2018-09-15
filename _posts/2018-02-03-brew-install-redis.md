@@ -4,6 +4,7 @@ title: 'Ruby On Rails 異步任務處理'
 date: 2018-02-03 10:04
 comments: true
 categories:
+tags: Redis
 ---
 使用[redis-rb](https://github.com/redis/redis-rb) 數據庫gem
 請先在本機安裝無法透過Gemfile安裝
@@ -39,7 +40,7 @@ def perform(import_id)
 end
 ```
 Controller加入以下代碼就可以呼叫了
-```ruby
+```rb
 ImportWorkerJob.perform_later(@import.id)
 ```
 在專案底下執行下面指令就可以看到是誰在幫你做執行了

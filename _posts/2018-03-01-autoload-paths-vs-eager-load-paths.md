@@ -5,11 +5,12 @@ date: 2018-03-01 18:31
 comments: true
 categories:
 description: '使用 mixin 以及 autoload_paths vs eager_load_paths解說'
+tags: Ruby
 ---
 > 先進行 mixin 範例<br>
 > 如果不想使用mixin請使用以下方式直接在Controller新增 Controller級的helper
 [helper-method-and-view-context解說](http://blog.xdite.net/posts/2014/06/16/helper-method-and-view-context).
-```ruby
+```rb
 helper_method :current_cart
 def current_cart
   @current_cart ||= find_cart
@@ -17,7 +18,7 @@ end
 ```
 在 `lib/modules/common_helper.rb` 先新增我們所需要的helper相關資訊<br>
 將Cart相關資訊存在session裡面 `common_helper.rb`
-```ruby
+```rb
 module CommonHelper
   def current_cart
     @current_cart ||= find_cart
@@ -33,7 +34,7 @@ module CommonHelper
 end
 ```
 接下來在 `config/application.rb`新增[自動載入方式](https://ihower.tw/rails/environments-and-bundler.html#sec6)這樣就完成了可以在Controller or View 呼叫
-```ruby
+```rb
 config.eager_load_paths << "#{Rails.root}/lib/modules"
 ```
 `eager_load_paths`目錄是指 Rails 會自動根據命名慣例載入，而 Ruby 的 $LOAD_PATH 常數則是 require 時會尋找的目錄。像 lib 這個目錄 Rails 預設就只有加到 $LOAD_PATH 之中，所以你放在 lib 的檔案是可以 require 到，但是因為預設沒有加到`eager_load_paths`之中，所以沒有自動載入的機制。
@@ -41,7 +42,7 @@ config.eager_load_paths << "#{Rails.root}/lib/modules"
 若要查看是否有載入請在`rails c`
 輸入這行`ActiveSupport::Dependencies.autoload_paths` OR
 `Rails.application.config.assets.paths`即可
-```ruby
+```rb
 > rails c
 > ActiveSupport::Dependencies.autoload_paths
 [
@@ -68,7 +69,7 @@ config.eager_load_paths << "#{Rails.root}/lib/modules"
 ]
 ```
 ### Controller 裡使用
-```ruby
+```rb
 def add_to_cart
   extend CommonHelper
   current_cart.add_product_to_cart(@product)
@@ -85,12 +86,12 @@ end
 [extend include 解說](http://blog.niclin.tw/posts/1076821)
 ### autoload_paths 以及 eager_load_paths使用方式
 autoload_paths在 Rails版本 < 5以下做使用以下任一種方式即可使用 in `config/application.rb`
-```ruby
+```rb
 config.autoload_paths += Dir["#{config.root}/lib/**"]
 config.autoload_paths += %W(#{config.root}/lib/modules)
 ```
 eager_load_paths 在 Rails版本 >= 5使用以下任一種方式即可使用，in `config/application.rb`
-```ruby
+```rb
 config.eager_load_paths << "#{Rails.root}/lib/modules"
 config.eager_load_paths += %W(#{config.root}/lib/modules)
 config.eager_load_paths += %W(

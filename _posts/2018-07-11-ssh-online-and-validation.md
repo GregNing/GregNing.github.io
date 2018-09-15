@@ -4,6 +4,7 @@ title: 'ssh 連線以及驗證'
 date: 2018-07-11 00:16
 comments: true
 categories:
+tags: ssh
 ---
 {% capture string_with_newlines %}
 如果我們要使用 `ssh` 去做連線登入動作請使用以下指令

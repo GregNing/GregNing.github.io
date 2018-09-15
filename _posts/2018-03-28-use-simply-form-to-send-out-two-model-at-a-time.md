@@ -4,11 +4,12 @@ title: 'simple_form 使用兩個model'
 date: 2018-03-28 16:52
 comments: true
 categories:
+tags: Rails
 ---
 [simple_form user two model ](https://github.com/plataformatec/simple_form/wiki/Nested-Models)
 ### 目標: 在 view 中使用兩個 model
 > 首先在model 先套上`accepts_nested_attributes_for`只限於`one_to_one or one_to_many`
-```ruby
+```rb
 class Product < ApplicationRecord
   has_many :sizes
   accepts_nested_attributes_for :sizes,allow_destroy: true, reject_if: :all_blank
@@ -24,7 +25,7 @@ end
 > `update_only:` has_one關係時起作用，是否更新關聯對象，默認設置為false。設置為true時，不管參數中是否有id，都更新關聯對象
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
-```ruby
+```rb
 def new
    @product = Product.new
    @product.sizes.build

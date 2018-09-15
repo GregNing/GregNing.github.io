@@ -9,7 +9,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
       self.data['tag'] = tag
-      self.data['title'] = "Posts Tagged &ldquo;"+tag+"&rdquo;"
+      self.data['title'] = "Posts Tagged &#60;#{tag}&#62;"
     end
   end
 

@@ -5,6 +5,7 @@ date: 2018-04-25 02:07
 comments: true
 categories:
 description: 'vs-code-development-mode-environment-synchronization'
+tags: VsCode
 ---
 首先使用`VS Code`安裝[SFTP](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp)
 安裝完成再使用`Ctrl+Shift+P `指令搜尋`SFTP: config`點選去他會產生一個`sftp.json`檔案在.vscode資料夾裡面。<br>

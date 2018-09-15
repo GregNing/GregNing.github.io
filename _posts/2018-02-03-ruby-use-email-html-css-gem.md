@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 'ruby use email html css gem'
+title: 'Ruby use email html css gem'
 date: 2018-02-03 08:25
 comments: true
 categories:
 description: 'Ruby 使用寄信Email-HTML CSS樣式的gem'
+tags: Gem Rails Ruby
 ---
 [letter_opener](https://github.com/ryanb/letter_opener)<br>
 [premailer-rails](https://github.com/fphilipe/premailer-rails)<br>
@@ -22,7 +23,7 @@ config.action_mailer.delivery_method = :letter_opener
 ```
 新增一個寄信用的`rails g mailer notification`
 寫上以下代碼做為註冊所需要的 mail就是寄信所用
-```ruby
+```rb
 def confirmed_registration(registration)
   @registration = registration
   @people = registration.people
@@ -37,7 +38,7 @@ end
         confirmed_registration: "報名成功: %{name}"
 ```
 Controller中設定寄信一小段即可這樣就可以寄信了
-```ruby
+```rb
 NotificationMailer.confirmed_registration(@registration).deliver_later
 ```
 編輯`app/views/layouts/mailer.html.erb`全部替換成以下代碼

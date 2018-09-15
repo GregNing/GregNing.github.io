@@ -5,6 +5,7 @@ date: 2018-08-19 23:35
 comments: true
 categories:
 description: 'Mongodb query operator(條件查詢)'
+tags: Mongod
 ---
 使用 Ruby 進行 mongodb query 時候可以參考以下使用
 例: 我們有個Model叫做Pet
@@ -14,7 +15,7 @@ Pet:
   another_attr: 1
 ```
 我們要搜尋某個 `attributes` 裡面的 hash value 資訊，可以這樣使用 `:'foo.bar'.gt => 0`
-```Ruby
+```rb
 Pet.where(:'foo.bar'.gt => 0, :another_attr => 1) // foo bar 要大於0
 Pet.where(:'foo.bar'.lt => 0, :another_attr => 1) // foo bar 要小於0
 ids = [13213, 232123, '3']

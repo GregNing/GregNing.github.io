@@ -5,6 +5,7 @@ date: 2018-02-01 16:39
 comments: true
 categories:
 description: 'Ruby 批次送出(使用Array(params[:ids]))'
+tags: Ruby Rails
 ---
 在`config\routes.rb`加上要設定的路由訊息
 ```rb

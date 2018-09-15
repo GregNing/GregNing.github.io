@@ -5,6 +5,7 @@ date: 2018-08-11 02:06
 comments: true
 categories:
 description: 'Mongoid Iterating Over Large Collections(大量數據跑迴圈)'
+tags: Mongod
 ---
 {% capture string_with_newlines %}
 當我們要找尋所有店家會使用 `Merchant.each`，但當數量過大就不太適合了，這時候會需要使用到 `batch_size`。

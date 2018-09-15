@@ -5,21 +5,22 @@ date: 2018-02-27 08:00
 comments: true
 categories:
 description: 'has_many through source 範例'
+tags: Ruby
 ---
 如果要用於模型上關聯的名稱與through模型中的關聯不相同，則可以使用source來指定它。
 以下範例
-```ruby
+```rb
 class Pet < ActiveRecord::Base
   has_many :dogs
 end
 ```
-```ruby
+```rb
 class Dog < ActiveRecord::Base
   belongs_to :pet
   has_many :breeds
 end
 ```
-```ruby
+```rb
 class Dog::Breed < ActiveRecord::Base
   belongs_to :dog
 end
@@ -27,7 +28,7 @@ end
 > 我們選擇使用命名空間Dog :: Breed，因為我們想要存取Dog.find(123).breeds作為關聯。<br>
 > 現在，如果我們想在Pet上創建``has_many：dog_breeds，：through =>：dogs``關聯，會出現問題。<br>
 > Rails將無法在Dog上找到：dog_breeds關聯，因此Rails不可能知道要使用哪個Dog關聯。所以我們要使用`:source`來指定給予
-```ruby
+```rb
 class Pet < ActiveRecord::Base
   has_many :dogs
   has_many :dog_breeds, :through => :dogs, :source => :breeds

@@ -4,6 +4,7 @@ title: 'Ajax UI 拖拉式選單'
 date: 2018-02-02 05:03
 comments: true
 categories:
+tags: Rails
 ---
 使用Jquery元件 拖拉移動[Sortable Plugin](http://api.jqueryui.com/sortable/)
 安裝[jquery-ui-rails](https://github.com/jquery-ui-rails/jquery-ui-rails)

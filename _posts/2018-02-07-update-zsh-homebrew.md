@@ -5,6 +5,7 @@ date: 2018-02-07 09:11
 comments: true
 categories:
 description: '更新ZSH'
+tags: Terminal
 ---
 # check the zsh info
 更新`ZSH`

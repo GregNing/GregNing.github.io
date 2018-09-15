@@ -4,6 +4,7 @@ title: 'Mac Terminal 登入訊息修改'
 date: 2018-05-02 16:29
 comments: true
 categories:
+tags: Terminal
 ---
 {% capture string_with_newlines %}
 Step1 首先要建立檔案

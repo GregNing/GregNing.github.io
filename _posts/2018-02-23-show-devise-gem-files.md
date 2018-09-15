@@ -5,6 +5,7 @@ date: 2018-02-23 16:41
 comments: true
 categories:
 description: '顯示 devise 有關的檔案'
+tags: Ruby Rails
 ---
 ### 如何顯示關於[devise](https://github.com/plataformatec/devise#getting-started) controller 以及 view
 顯示`Views`

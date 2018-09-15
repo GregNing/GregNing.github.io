@@ -5,6 +5,7 @@ date: 2018-05-09 05:16
 comments: true
 categories:
 description: 'Angularjs use modal settings(使用 Angularjs 設定 Bootstrap視窗)'
+tags: Angularjs
 ---
 `<%= t('message')%>` 是用I18n轉換而來
 ```erb

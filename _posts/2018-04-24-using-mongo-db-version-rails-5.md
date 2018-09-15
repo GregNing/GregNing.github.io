@@ -5,12 +5,13 @@ date: 2018-04-24 14:51
 comments: true
 categories:
 description: 'ROR use mongodb'
+tags: Ruby Mongo
 ---
 ## Install Mongo before you need to remove all the active record related entries from `application.rb` and `config/initializers/*`
 ### Step1 Remove database adapter gems from your Gemfile
 install in Gemfile `gem 'sqlite3'`
 ### Step2 Remove require 'rails/all' and Add below
-```ruby
+```rb
 #require 'rails/all'
 require "action_controller/railtie"
 require "action_mailer/railtie"
@@ -29,7 +30,7 @@ in Gemfile `gem 'mongoid', '~> 6.1.0'`<br>
 User `rails g mongoid:config` create `config/initializers/mongoid.rb`and Add below
 `Mongoid.load!(File.expand_path("config/mongoid.yml", Dir.pwd))`<br>
 in `application.rb` setting
-```ruby
+```rb
 config.generators do |g|
   g.orm :mongoid
 end

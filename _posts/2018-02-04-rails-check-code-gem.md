@@ -5,6 +5,7 @@ date: 2018-02-04 14:31
 comments: true
 categories:
 description: 'rails check code gem'
+tags: Rails
 ---
 使用[brakeman](https://github.com/presidentbeef/brakeman)可以分析代碼找出有漏洞的地方
 首先在Gemfile安裝

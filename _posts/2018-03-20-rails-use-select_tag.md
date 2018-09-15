@@ -5,6 +5,7 @@ date: 2018-03-20 14:38
 comments: true
 categories:
 description: 'Rails select_tag 介紹以及使用ajax方式不使用remote: true'
+tags: Rails
 ---
 我們不用 [simple_form](https://github.com/plataformatec/simple_form) 表單去做處理而是使用原始Rails所用的select_tag。<br>
 使用[url_for](https://apidock.com/rails/ActionView/RoutingUrlFor/url_for)
@@ -81,7 +82,7 @@ changeCartitemquantity: changeCartitemquantity,
 </script>
 ```
 Controller 中使用直接返回你要的 `example.js.erb`
-```ruby
+```rb
 ....省略
 respond_to do |format|
 format.js { render "example"}

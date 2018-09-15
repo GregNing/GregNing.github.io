@@ -5,6 +5,7 @@ date: 2018-05-17 17:37
 comments: true
 description: 'git squash 介紹'
 categories:
+tags: Git
 ---
 #### `git squash` 合併目前的commit
 假設我有這麼多commit或更多

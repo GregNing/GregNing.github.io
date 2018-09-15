@@ -5,6 +5,7 @@ date: 2018-02-04 18:09
 comments: true
 categories:
 description: 'rails use async'
+tags: Rails
 ---
 使用`async`
 ```erb
