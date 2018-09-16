@@ -142,6 +142,8 @@
         width: 100%;
         padding: 0;
         text-align: center;
+        height: 50px;
+        line-height: 3;
 
         &:hover {
           color: #efefef;
@@ -179,6 +181,29 @@
         small {
           color: #a7a3a3;
         }
+      }
+    }
+  }
+
+  .pagination {
+    .pagination-item {
+      width: 30%;
+      border: 1px solid #bcbcbc;
+      border-radius: 5px;
+      color: #343434;
+
+      & ~ span {
+        color: #c5c5c5;
+      }
+
+      &.newer {
+        float: right;
+      }
+
+      &:not(span):hover {
+        text-decoration: none;
+        color: #efefef;
+        background-color: #c5c5c5;
       }
     }
   }
