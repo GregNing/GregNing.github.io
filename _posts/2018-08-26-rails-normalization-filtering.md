@@ -8,6 +8,7 @@ description: '使用 Rails 過濾特殊字元方法'
 tags: Rails
 ---
 [Rails HTML Sanitizers](https://apidock.com/rails/ActionView/Helpers/SanitizeHelper/sanitize)
+
 ```rb
 filter_words = "Greg'\bs works" # \b: 表示退格鍵
 ActionController::Base.helpers.sanitize(filter_words
