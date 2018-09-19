@@ -3,7 +3,8 @@ layout: post
 title: '使用 IIS 建立 FTP 虛擬目錄 以及隔離使用者教學'
 date: 2017-11-23 02:09
 comments: true
-categories: 
+categories:
+tags: FTP IIS
 ---
 在FTP 建立虛擬目錄
 
@@ -17,4 +18,4 @@ Ex: FTP使用者是本機使用者(LocalUser)
 7. 接著開放使用者存取FTP站台的權限
 8. 再來就是調整"最終目標資料夾"的存取權限
 
-來源https://atifans.net/articles/microsoft-ftp-7-5-users-isolation/
+[來源](https://atifans.net/articles/microsoft-ftp-7-5-users-isolation/)
