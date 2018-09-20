@@ -15,7 +15,9 @@ gem install redis
 ```rb
 redis-server /usr/local/etc/redis.conf
 ```
+應該會長這樣
 
+![scrollbar.PNG](https://s3-ap-northeast-1.amazonaws.com/gregningpublic/a8COh8vT0mKC41ymsY83.png)
 接下來安裝[sidekiq](https://github.com/mperham/sidekiq)
 sidekiq 搭配 redis效果非常突出
 請在Gemfile安裝
