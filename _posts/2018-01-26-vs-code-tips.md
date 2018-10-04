@@ -3,7 +3,7 @@ layout: post
 title: 'VS Code Ruby 相關插件小技巧'
 date: 2018-01-26 17:10
 comments: true
-categories:
+categories: VsCode
 tags: VsCode
 ---
 

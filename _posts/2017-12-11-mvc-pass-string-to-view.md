@@ -3,7 +3,7 @@ layout: post
 title: 'MVC Pass string To View'
 date: 2017-12-11 02:21
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 ```cs

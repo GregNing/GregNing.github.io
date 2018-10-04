@@ -3,7 +3,7 @@ layout: post
 title: '使用Jquery將照片載入顯示'
 date: 2017-09-18 16:46
 comments: true
-categories:
+categories: Jquery
 tags: Jquery CSS
 ---
 ```js

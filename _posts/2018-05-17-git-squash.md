@@ -4,7 +4,7 @@ title: 'git squash (將眾多的Commit 簡略化)'
 date: 2018-05-17 17:37
 comments: true
 description: 'git squash 介紹'
-categories:
+categories: Git
 tags: Git
 ---
 #### `git squash` 合併目前的commit

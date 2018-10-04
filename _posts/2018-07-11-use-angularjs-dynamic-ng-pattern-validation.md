@@ -3,7 +3,7 @@ layout: post
 title: '使用 Angularjs dynamic ng-pattern validation'
 date: 2018-07-11 13:24
 comments: true
-categories:
+categories: Angularjs
 tags: Angularjs
 ---
 我們要使用正規化來限制使用者輸入某些特殊字元

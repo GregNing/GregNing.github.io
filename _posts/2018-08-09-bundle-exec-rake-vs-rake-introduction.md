@@ -3,7 +3,7 @@ layout: post
 title: 'bundle exec rake vs rake'
 date: 2018-08-09 01:08
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'bundle exec rake vs rake 介紹'
 tags: Ruby
 ---

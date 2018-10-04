@@ -3,7 +3,7 @@ layout: post
 title: 'MVC Use ELMAH監控程式'
 date: 2017-10-03 16:13
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 #### 使用Elmah監控程式若出現錯誤會寄信或是寫log進資料庫，大部分的動作直接寫到`web.config`裡面。

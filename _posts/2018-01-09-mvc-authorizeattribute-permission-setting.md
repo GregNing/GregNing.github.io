@@ -3,7 +3,7 @@ layout: post
 title: 'MVC AuthorizeAttribute 自訂權限設定'
 date: 2018-01-09 02:27
 comments: true
-categories:
+categories: MVC
 tags: Csharp MVC
 ---
 

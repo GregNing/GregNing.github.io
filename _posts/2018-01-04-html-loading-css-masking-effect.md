@@ -3,7 +3,7 @@ layout: post
 title: 'HTML loading css + 遮蔽效果(使用JAVASCRIPT)'
 date: 2018-01-04 06:36
 comments: true
-categories:
+categories: JS
 tags: CSS JS
 ---
 首先建立HTML

@@ -3,7 +3,7 @@ layout: post
 title: '驗證中英韓 CJK regex'
 date: 2018-07-24 10:23
 comments: true
-categories:
+categories: JS
 tags: JS
 ---
 使用正規化驗證。

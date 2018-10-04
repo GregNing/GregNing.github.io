@@ -3,7 +3,7 @@ layout: post
 title: 'Turbolinks 造成的相關錯誤'
 date: 2018-01-31 08:34
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Rails
 ---
 `Turbolinks`是一個Rails內建的頁面加速工具(Javascript套件工具)，由於他只會重新載入body而header只有在第一次進入頁面時候去做載入動作，導致會吃不到某些 javascript造成某些功能失效。

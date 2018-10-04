@@ -20,14 +20,11 @@
   
     <link rel="stylesheet" href="/public/css/main.css" media="screen" type="text/css">
   
-    <link rel="stylesheet" href="/public/css/poole.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" media="screen" type="text/css">
   
     <link rel="stylesheet" href="/public/css/syntax.css" media="screen" type="text/css">
   
-    <link rel="stylesheet" href="/public/css/hyde.css" media="screen" type="text/css">
-  
-    <link rel="stylesheet" href="/public/css/prettify.css" media="screen" type="text/css">
-  
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css.map" media="screen" type="text/css">
 
 
   <link rel="stylesheet" href="/public/css/font-awesome/font-awesome.css" media="screen" type="text/css">
@@ -38,265 +35,112 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- JS -->
+  
+    <script>var duoshuoQuery = { short_name: "maydaycoder" };</script>
+    
+      <script src="/assets/javascript/jquery.js"></script>
+    
+      <script src="/assets/javascript/jquery.pjax.js"></script>
+    
+      <script src="/assets/javascript/embed.js"></script>
+    
+      <script src="/assets/javascript/default.js"></script>
+    
+  
 </head>
 
   <body>
-    <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="/">
-          Greg's Blog
+    <div class="menubar-container">
+  <div class="container">
+    <div class="row">
+      <div class="site-home">
+        <a href="/" title="前往Greg Blog首頁">
+          <span>Greg's Blog</span>
         </a>
-      </h1>
-      <p class="lead">Hello Welcome to Greg Blog!</p>
+      </div>
+      <nav role="navigation" class="navbar">
+        <div class="site-menu">
+          <ul>
+            <li>
+              <a class="pjaxlink" href="/" data-hover="Home">Home</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/about" data-hover="About">About</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/category" data-hover="Category">Category</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/searchTag" data-hover="Tag Cloud">Tag Cloud</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/archive" data-hover="Archive">Archive</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menubar-search-block">
+          <label class="menubar-search" title="Search Greg's Posts">
+            <span class="fa fa-search" aria-hidden="true"></span>
+            <input
+              type="text"
+              class="search-query st-default-search-input"
+              placeholder="Search Posts"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off">
+          </label>
+        </div>
+        </div>
+      </nav>
     </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/"">Home</a>
-
-      
-
-      
-      
-        
-          
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/searchTag/">Search Tag</a>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-
-      <span class="sidebar-nav-item">
-        <ul class="list-inline text-center">
-          <li>
-            <a href="https://github.com/GregNing">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x"></i>
-              </span>
-            </a>
-          </li>
-
-        </ul>
-      </span>
-    </nav>
-
-    <p>&copy; Copyright 2018 | Greg's Blog | All rights reserved</p>
   </div>
 </div>
-
-    <div class="content container">
-      <h2 class="tag-summary-title">&#60;Jquery&#62;</h2>
+    <div class="content g-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left sidebar-left">
+  <div class="profile">
+    <div class="profile-info">
+      <div class="profile-img">
+          <img src="/public/profile_img.jpg">
+      </div>
+      <h2>Greg Yang</h2>
+      <h3>Developer</h3>
+      <span class="location">
+        <i class="fa fa-map-marker">
+          <span>Taipei, Taiwan</span>
+        </i>
+      </span>
+    </div>
+    <div class="profile-integral">
+      <div class="posts-total-count">
+            
+             108 
+          <span>POSTS</span>
+      </div>
+        <div>
+          <span>
+            
+             35 
+          </span>
+          <span>TAGS</span>
+        </div>
+    </div>
+    <div class="profile-link">
+      <ul>
+        <li>
+            <a href="https://github.com/GregNing" target="_blank" title="Greg GitHub">
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 box-shadow fadein-right sidebar-right">
+            <div class="page-content" id="pjax">
+              <h2 class="tag-summary-title">&#60;Jquery&#62;</h2>
 <table class="table table-striped tag-summary">
   <tbody>
 	
@@ -726,22 +570,10 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/10/12/use-scrolltop/">
+		        <a href="/jquery/2017/10/12/use-scrolltop/">
 		            Use scrollTop
 		            <small class="subtitle">
 		                <span></span>
@@ -795,7 +627,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/09/20/jquery-reload-image/">
+		        <a href="/jquery/2017/09/20/jquery-reload-image/">
 		            Reload/Refresh Images Use Jquery
 		            <small class="subtitle">
 		                <span></span>
@@ -823,7 +655,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/09/18/jquery-show-image/">
+		        <a href="/jquery/2017/09/18/jquery-show-image/">
 		            使用Jquery將照片載入顯示
 		            <small class="subtitle">
 		                <span></span>
@@ -875,7 +707,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/09/08/jquery-create-function/">
+		        <a href="/jquery/2017/09/08/jquery-create-function/">
 		            自動新增Jquery Method
 		            <small class="subtitle">
 		                <span></span>
@@ -907,8 +739,8 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/09/08/use-highcharts/">
-		            highcharts  折線圖使用
+		        <a href="/hihcharts/2017/09/08/use-highcharts/">
+		            Highcharts  折線圖使用
 		            <small class="subtitle">
 		                <span></span>
 		            </small>
@@ -920,7 +752,7 @@
 				    <span class="fa-stack fa-sm">
 		                <i class="fa fa-tags fa-stack-1x"></i>
 		            </span> :
-		             <a class="tag-wrapper" href="/tags/Hihcharts" title="View posts tagged with &quot;Hihcharts&quot;"><i class="tags">Hihcharts</i></a>    <a class="tag-wrapper" href="/tags/MVC" title="View posts tagged with &quot;MVC&quot;"><i class="tags">MVC</i></a>    <a class="tag-wrapper" href="/tags/Csharp" title="View posts tagged with &quot;Csharp&quot;"><i class="tags">Csharp</i></a>    <a class="tag-wrapper" href="/tags/Jquery" title="View posts tagged with &quot;Jquery&quot;"><i class="tags">Jquery</i></a>   
+		             <a class="tag-wrapper" href="/tags/Highcharts" title="View posts tagged with &quot;Highcharts&quot;"><i class="tags">Highcharts</i></a>    <a class="tag-wrapper" href="/tags/MVC" title="View posts tagged with &quot;MVC&quot;"><i class="tags">MVC</i></a>    <a class="tag-wrapper" href="/tags/Csharp" title="View posts tagged with &quot;Csharp&quot;"><i class="tags">Csharp</i></a>    <a class="tag-wrapper" href="/tags/Jquery" title="View posts tagged with &quot;Jquery&quot;"><i class="tags">Jquery</i></a>   
 		        </small>
 	        </p>
 	    </td>
@@ -937,7 +769,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/09/04/js-random-color/">
+		        <a href="/jquery/2017/09/04/js-random-color/">
 		            使用javascript 自動random顏色
 		            <small class="subtitle">
 		                <span></span>
@@ -971,7 +803,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2017/08/31/use-jquery-function-to-run-loops-added-function/">
+		        <a href="/jquery/2017/08/31/use-jquery-function-to-run-loops-added-function/">
 		            使用Jquery function 跑 迴圈 新增 function
 		            <small class="subtitle">
 		                <span></span>
@@ -1036,10 +868,44 @@
 	
 	
 	
+	<tr>
+	    <td>
+		    <h3 class="tag-body">
+		        <a href="/jquery/2017/08/21/radio-button/">
+		            RadioButton 使用
+		            <small class="subtitle">
+		                <span></span>
+		            </small>
+		        </a>
+		    </h3>
+			<p class="tag-footer">
+				<span class="post-date">Posted on August 21 2017</span>
+				<small>
+				    <span class="fa-stack fa-sm">
+		                <i class="fa fa-tags fa-stack-1x"></i>
+		            </span> :
+		             <a class="tag-wrapper" href="/tags/Jquery" title="View posts tagged with &quot;Jquery&quot;"><i class="tags">Jquery</i></a>   
+		        </small>
+	        </p>
+	    </td>
+	</tr>
+	
 	
 	
   </tbody>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pjax_loading">
+      <div class="spinner">
+        <div class="spinner-text">Loading</div>
+        <div class="spinner-sector spinner-sector-red"></div>
+        <div class="spinner-sector spinner-sector-blue"></div>
+        <div class="spinner-sector spinner-sector-green"></div>
+      </div>
     </div>
   </body>
 </html>

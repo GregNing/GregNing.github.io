@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby 使用Mongo DB'
 date: 2018-04-24 14:51
 comments: true
-categories:
+categories: Mongo
 description: 'ROR use mongodb'
 tags: Ruby Mongo
 ---

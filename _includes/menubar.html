@@ -1,0 +1,45 @@
+<div class="menubar-container">
+  <div class="container">
+    <div class="row">
+      <div class="site-home">
+        <a href="/" title="前往Greg Blog首頁">
+          <span>Greg's Blog</span>
+        </a>
+      </div>
+      <nav role="navigation" class="navbar">
+        <div class="site-menu">
+          <ul>
+            <li>
+              <a class="pjaxlink" href="/" data-hover="Home">Home</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/about" data-hover="About">About</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/category" data-hover="Category">Category</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/searchTag" data-hover="Tag Cloud">Tag Cloud</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/archive" data-hover="Archive">Archive</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menubar-search-block">
+          <label class="menubar-search" title="Search Greg's Posts">
+            <span class="fa fa-search" aria-hidden="true"></span>
+            <input
+              type="text"
+              class="search-query st-default-search-input"
+              placeholder="Search Posts"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off">
+          </label>
+        </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,7 @@ layout: post
 title: '@Html.Partial  @Html.RenderPartial  @Html.Action @Html.RenderAction使用'
 date: 2017-08-25 02:32
 comments: true
-categories:
+categories: MVC
 tags: Csharp MVC
 ---
 #### 這樣寫效能較差，不推薦使用

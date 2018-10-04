@@ -3,7 +3,7 @@ layout: post
 title: '顏色不重複 自動randowNewColor'
 date: 2017-09-08 17:40
 comments: true
-categories:
+categories: JS
 tags: CSS JS
 ---
 

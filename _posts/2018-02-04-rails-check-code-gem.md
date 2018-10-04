@@ -3,7 +3,7 @@ layout: post
 title: 'Rails 檢查代碼助手'
 date: 2018-02-04 14:31
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'rails check code gem'
 tags: Rails
 ---

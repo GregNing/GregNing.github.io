@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby 使用ranked-model Gem來做排序動作'
 date: 2018-02-02 04:17
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Gem Ruby
 ---
 在這介紹[ranked-model](https://github.com/mixonic/ranked-model)

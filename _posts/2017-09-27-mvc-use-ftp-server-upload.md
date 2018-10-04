@@ -3,7 +3,7 @@ layout: post
 title: 'MVC Use FTP Server Show imge'
 date: 2017-09-27 06:31
 comments: true
-categories:
+categories: MVC
 tags: MVC FTP Csharp
 ---
 首先上傳圖片有兩種方式 使用FtpWebRequest方式做上傳動作

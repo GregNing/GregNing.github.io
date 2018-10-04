@@ -3,7 +3,7 @@ layout: post
 title: '使用Hangfire  MVC 做排程 '
 date: 2017-10-15 08:44
 comments: true
-categories:
+categories: Hangfire
 tags: MVC Hangfire Csharp
 ---
 所使用的是 Hangfire 強大排程器有 UI介面可以使用。<br>

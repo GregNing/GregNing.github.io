@@ -3,7 +3,7 @@ layout: post
 title: 'MVC 從Header 移除 敏感資訊'
 date: 2017-12-17 15:00
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 將會把X-AspNet 以及 X-Powered 相關資訊隱藏

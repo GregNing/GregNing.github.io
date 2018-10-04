@@ -3,7 +3,7 @@ layout: post
 title: '使用WebImage 調整圖像大小像速比'
 date: 2017-09-18 15:42
 comments: true
-categories:
+categories: WebImage
 tags: WebImage Csharp
 ---
 ```cs

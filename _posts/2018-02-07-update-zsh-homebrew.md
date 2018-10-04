@@ -3,7 +3,7 @@ layout: post
 title: 'Update ZSH Homebrew'
 date: 2018-02-07 09:11
 comments: true
-categories:
+categories: Terminal
 description: '更新ZSH'
 tags: Terminal
 ---

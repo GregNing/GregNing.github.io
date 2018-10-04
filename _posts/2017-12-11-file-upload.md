@@ -3,7 +3,7 @@ layout: post
 title: 'jQuery File Upload 檔案上傳 + 使用 [jQuery] Jcrop 做圖片裁切'
 date: 2017-12-11 03:33
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 上傳檔案[jQuery File Upload Demo](https://blueimp.github.io/jQuery-File-Upload/)<br>

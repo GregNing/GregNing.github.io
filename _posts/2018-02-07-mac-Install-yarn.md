@@ -3,7 +3,7 @@ layout: post
 title: 'Mac Install yarn'
 date: 2018-02-07 09:34
 comments: true
-categories:
+categories: Yarn
 tags: Yarn
 ---
 如果已經裝好Homebrew要在安裝 [yarn](https://yarnpkg.com/lang/en/docs/install/)請按照以下方式即可

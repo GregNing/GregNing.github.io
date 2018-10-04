@@ -3,7 +3,7 @@ layout: post
 title: 'Check ssh key path'
 date: 2018-05-02 04:53
 comments: true
-categories:
+categories: ssh
 tags: ssh
 ---
 ```

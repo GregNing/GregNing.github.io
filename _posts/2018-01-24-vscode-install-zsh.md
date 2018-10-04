@@ -3,8 +3,8 @@ layout: post
 title: 'VSCode 安裝 zsh'
 date: 2018-01-24 14:34
 comments: true
-categories:
-tags: Terminal ZSH
+categories: VsCode
+tags: VsCode
 ---
 安裝[ZSH]( https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 我所使用的是macOS，輸入以下安裝

@@ -3,7 +3,7 @@ layout: post
 title: 'Reload/Refresh Images Use Jquery'
 date: 2017-09-20 03:19
 comments: true
-categories:
+categories: Jquery
 tags: Jquery CSS
 ---
 ```js

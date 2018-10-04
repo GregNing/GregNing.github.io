@@ -3,7 +3,7 @@ layout: post
 title: 'MSDTC 設定'
 date: 2017-12-12 02:27
 comments: true
-categories:
+categories: MSDTC
 tags: MSDTC SQL
 ---
 1.  在[開始]工作列上的[執行]輸入`dcomcnfg.exe`，出現 ”元件服務”，在<br>

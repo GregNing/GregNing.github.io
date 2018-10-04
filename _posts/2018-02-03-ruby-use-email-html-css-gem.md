@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby use email html css gem'
 date: 2018-02-03 08:25
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'Ruby 使用寄信Email-HTML CSS樣式的gem'
 tags: Gem Rails Ruby
 ---

@@ -20,6 +20,7 @@
   {% for stylesheet in site.custom_css %}
     <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/{{ stylesheet }}.css" media="screen" type="text/css">
   {% endfor %}
+    <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/bootstrap.min.css.map" media="screen" type="text/css">
 {% endif %}
 
   <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/font-awesome/font-awesome.css" media="screen" type="text/css">
@@ -30,4 +31,11 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- JS -->
+  {% if site.plugin_js %}
+    <script>var duoshuoQuery = { short_name: "maydaycoder" };</script>
+    {% for javascript in site.plugin_js %}
+      <script src="{{ prepend: site.baseurl }}/assets/javascript/{{ javascript }}.js"></script>
+    {% endfor %}
+  {% endif %}
 </head>

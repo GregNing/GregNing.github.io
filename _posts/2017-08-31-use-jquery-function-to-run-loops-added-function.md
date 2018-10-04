@@ -3,7 +3,7 @@ layout: post
 title: '使用Jquery function 跑 迴圈 新增 function'
 date: 2017-08-31 11:29
 comments: true
-categories:
+categories: Jquery
 tags: Jquery
 ---
 可使用 這隻迴圈function 製造迴圈新增function

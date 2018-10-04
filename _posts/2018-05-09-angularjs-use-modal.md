@@ -3,7 +3,7 @@ layout: post
 title: 'Angularjs use modal settings'
 date: 2018-05-09 05:16
 comments: true
-categories:
+categories: Angularjs
 description: 'Angularjs use modal settings(使用 Angularjs 設定 Bootstrap視窗)'
 tags: Angularjs
 ---

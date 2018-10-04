@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'highcharts  折線圖使用'
+title: 'Highcharts  折線圖使用'
 date: 2017-09-08 17:26
 comments: true
-categories:
-tags: Hihcharts MVC Csharp Jquery
+categories: Hihcharts
+tags: Highcharts MVC Csharp Jquery
 ---
 
 ##### 先設定折線圖所需要元件

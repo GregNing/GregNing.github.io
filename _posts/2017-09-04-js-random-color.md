@@ -3,7 +3,7 @@ layout: post
 title: '使用javascript 自動random顏色'
 date: 2017-09-04 03:18
 comments: true
-categories:
+categories: Jquery
 tags: Jquery CSS
 ---
 

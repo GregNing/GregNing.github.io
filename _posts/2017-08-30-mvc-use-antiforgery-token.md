@@ -3,7 +3,7 @@ layout: post
 title: '在 AJAX 裡使用 AntiForgeryToken 的處理'
 date: 2017-08-30 04:25
 comments: true
-categories:
+categories: MVC
 tags: Csharp MVC
 ---
 ##### 新增CommonRazorFunctions.cshtml

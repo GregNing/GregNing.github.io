@@ -3,7 +3,7 @@ layout: post
 title: 'use has_many through'
 date: 2018-02-27 08:00
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'has_many through source 範例'
 tags: Ruby
 ---

@@ -3,7 +3,7 @@ layout: post
 title: 'rails use select_tag'
 date: 2018-03-20 14:38
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'Rails select_tag 介紹以及使用ajax方式不使用remote: true'
 tags: Rails
 ---

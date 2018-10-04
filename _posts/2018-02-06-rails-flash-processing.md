@@ -3,7 +3,7 @@ layout: post
 title: 'Rails Flash使用'
 date: 2018-02-06 16:04
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Rails
 ---
 Rails Falsh hash會儲存在session中，當重新request頁面時，會從session中提取出來，並且立刻刪除，所以只會出現一次，它的用處在於redirect時，能夠從這一個request傳遞訊息到下一個request主要用於顯示於畫面，Rails預設針對notice和alert這兩個類型可以直接塞進redirect_to當作參數。

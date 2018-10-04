@@ -3,7 +3,7 @@ layout: post
 title: '使用 Ruby 上傳 Heroku指南'
 date: 2018-01-17 14:30
 comments: true
-categories:
+categories: Heroku
 tags: Heroku Ruby
 ---
 為何要修改Gemfile文件才能上傳Heroku請參考以下

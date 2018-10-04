@@ -3,7 +3,7 @@ layout: post
 title: 'MVC 使用iTextsharp 產出相關 PDF檔案'
 date: 2017-11-30 01:47
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 請先自行使用Nutget安裝 iTextsharp

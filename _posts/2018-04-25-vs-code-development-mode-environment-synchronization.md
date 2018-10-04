@@ -3,7 +3,7 @@ layout: post
 title: 'VS Code (Use SFTP)開發模式環境同步'
 date: 2018-04-25 02:07
 comments: true
-categories:
+categories: VsCode
 description: 'vs-code-development-mode-environment-synchronization'
 tags: VsCode
 ---

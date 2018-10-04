@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby On Rails 異步任務處理'
 date: 2018-02-03 10:04
 comments: true
-categories:
+categories: Redis
 tags: Redis
 ---
 使用[redis-rb](https://github.com/redis/redis-rb) 數據庫gem

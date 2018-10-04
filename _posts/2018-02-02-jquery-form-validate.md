@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby Jquery Form Validation Plugin'
 date: 2018-02-02 08:42
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Rails
 ---
 {% capture string_with_newlines %}

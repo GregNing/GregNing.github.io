@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby上傳到Heroku(基礎篇)'
 date: 2018-01-17 12:29
 comments: true
-categories:
+categories: Heroku
 description: ROR專案上傳到Heroku
 tags: Heroku Ruby Git
 ---

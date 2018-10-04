@@ -3,7 +3,7 @@ layout: post
 title: '自動新增Jquery Method'
 date: 2017-09-08 17:35
 comments: true
-categories:
+categories: Jquery
 tags: Jquery
 ---
 

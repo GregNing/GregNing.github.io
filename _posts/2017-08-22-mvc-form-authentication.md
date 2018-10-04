@@ -3,7 +3,7 @@ layout: post
 title: 'Form Authentication(表單驗證) 很值得參考'
 date: 2017-08-22 09:42
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 

@@ -20,14 +20,11 @@
   
     <link rel="stylesheet" href="/public/css/main.css" media="screen" type="text/css">
   
-    <link rel="stylesheet" href="/public/css/poole.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" media="screen" type="text/css">
   
     <link rel="stylesheet" href="/public/css/syntax.css" media="screen" type="text/css">
   
-    <link rel="stylesheet" href="/public/css/hyde.css" media="screen" type="text/css">
-  
-    <link rel="stylesheet" href="/public/css/prettify.css" media="screen" type="text/css">
-  
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css.map" media="screen" type="text/css">
 
 
   <link rel="stylesheet" href="/public/css/font-awesome/font-awesome.css" media="screen" type="text/css">
@@ -38,265 +35,112 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- JS -->
+  
+    <script>var duoshuoQuery = { short_name: "maydaycoder" };</script>
+    
+      <script src="/assets/javascript/jquery.js"></script>
+    
+      <script src="/assets/javascript/jquery.pjax.js"></script>
+    
+      <script src="/assets/javascript/embed.js"></script>
+    
+      <script src="/assets/javascript/default.js"></script>
+    
+  
 </head>
 
   <body>
-    <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="/">
-          Greg's Blog
+    <div class="menubar-container">
+  <div class="container">
+    <div class="row">
+      <div class="site-home">
+        <a href="/" title="前往Greg Blog首頁">
+          <span>Greg's Blog</span>
         </a>
-      </h1>
-      <p class="lead">Hello Welcome to Greg Blog!</p>
+      </div>
+      <nav role="navigation" class="navbar">
+        <div class="site-menu">
+          <ul>
+            <li>
+              <a class="pjaxlink" href="/" data-hover="Home">Home</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/about" data-hover="About">About</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/category" data-hover="Category">Category</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/searchTag" data-hover="Tag Cloud">Tag Cloud</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/archive" data-hover="Archive">Archive</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menubar-search-block">
+          <label class="menubar-search" title="Search Greg's Posts">
+            <span class="fa fa-search" aria-hidden="true"></span>
+            <input
+              type="text"
+              class="search-query st-default-search-input"
+              placeholder="Search Posts"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off">
+          </label>
+        </div>
+        </div>
+      </nav>
     </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/"">Home</a>
-
-      
-
-      
-      
-        
-          
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/searchTag/">Search Tag</a>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-
-      <span class="sidebar-nav-item">
-        <ul class="list-inline text-center">
-          <li>
-            <a href="https://github.com/GregNing">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x"></i>
-              </span>
-            </a>
-          </li>
-
-        </ul>
-      </span>
-    </nav>
-
-    <p>&copy; Copyright 2018 | Greg's Blog | All rights reserved</p>
   </div>
 </div>
-
-    <div class="content container">
-      <h2 class="tag-summary-title">&#60;Rails&#62;</h2>
+    <div class="content g-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left sidebar-left">
+  <div class="profile">
+    <div class="profile-info">
+      <div class="profile-img">
+          <img src="/public/profile_img.jpg">
+      </div>
+      <h2>Greg Yang</h2>
+      <h3>Developer</h3>
+      <span class="location">
+        <i class="fa fa-map-marker">
+          <span>Taipei, Taiwan</span>
+        </i>
+      </span>
+    </div>
+    <div class="profile-integral">
+      <div class="posts-total-count">
+            
+             108 
+          <span>POSTS</span>
+      </div>
+        <div>
+          <span>
+            
+             35 
+          </span>
+          <span>TAGS</span>
+        </div>
+    </div>
+    <div class="profile-link">
+      <ul>
+        <li>
+            <a href="https://github.com/GregNing" target="_blank" title="Greg GitHub">
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 box-shadow fadein-right sidebar-right">
+            <div class="page-content" id="pjax">
+              <h2 class="tag-summary-title">&#60;Rails&#62;</h2>
 <table class="table table-striped tag-summary">
   <tbody>
 	
@@ -305,7 +149,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/08/26/rails-normalization-filtering/">
+		        <a href="/ruby-on-rails/2018/08/26/rails-normalization-filtering/">
 		            Rails 特殊字元過濾(白名單)
 		            <small class="subtitle">
 		                <span>使用 Rails 過濾特殊字元方法</span>
@@ -405,7 +249,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/03/28/use-simply-form-to-send-out-two-model-at-a-time/">
+		        <a href="/ruby-on-rails/2018/03/28/use-simply-form-to-send-out-two-model-at-a-time/">
 		            simple_form 使用兩個model
 		            <small class="subtitle">
 		                <span></span>
@@ -431,7 +275,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/03/20/rails-use-select_tag/">
+		        <a href="/ruby-on-rails/2018/03/20/rails-use-select_tag/">
 		            rails use select_tag
 		            <small class="subtitle">
 		                <span>Rails select_tag 介紹以及使用ajax方式不使用remote: true</span>
@@ -471,7 +315,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/23/show-devise-gem-files/">
+		        <a href="/ruby-on-rails/2018/02/23/show-devise-gem-files/">
 		            show devise gem files
 		            <small class="subtitle">
 		                <span>顯示 devise 有關的檔案</span>
@@ -505,7 +349,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/06/rails-flash-processing/">
+		        <a href="/ruby-on-rails/2018/02/06/rails-flash-processing/">
 		            Rails Flash使用
 		            <small class="subtitle">
 		                <span></span>
@@ -531,33 +375,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/06/5762248/">
-		            Rails favicon icon
-		            <small class="subtitle">
-		                <span></span>
-		            </small>
-		        </a>
-		    </h3>
-			<p class="tag-footer">
-				<span class="post-date">Posted on February 6 2018</span>
-				<small>
-				    <span class="fa-stack fa-sm">
-		                <i class="fa fa-tags fa-stack-1x"></i>
-		            </span> :
-		             <a class="tag-wrapper" href="/tags/Rails" title="View posts tagged with &quot;Rails&quot;"><i class="tags">Rails</i></a>   
-		        </small>
-	        </p>
-	    </td>
-	</tr>
-	
-	
-	
-	
-	
-	<tr>
-	    <td>
-		    <h3 class="tag-body">
-		        <a href="/2018/02/04/rails-use-async/">
+		        <a href="/ruby-on-rails/2018/02/04/rails-use-async/">
 		            HTML異步加載Script
 		            <small class="subtitle">
 		                <span>rails use async</span>
@@ -583,7 +401,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/04/rails-check-code-gem/">
+		        <a href="/ruby-on-rails/2018/02/04/rails-check-code-gem/">
 		            Rails 檢查代碼助手
 		            <small class="subtitle">
 		                <span>rails check code gem</span>
@@ -616,14 +434,10 @@
 	
 	
 	
-	
-	
-	
-	
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/03/ruby-use-email-html-css-gem/">
+		        <a href="/ruby-on-rails/2018/02/03/ruby-use-email-html-css-gem/">
 		            Ruby use email html css gem
 		            <small class="subtitle">
 		                <span>Ruby 使用寄信Email-HTML CSS樣式的gem</span>
@@ -661,7 +475,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/03/5558680/">
+		        <a href="/ruby-on-rails/2018/02/03/5558680/">
 		            使用paper_trail完整的版本控管
 		            <small class="subtitle">
 		                <span></span>
@@ -691,7 +505,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/02/5556148/">
+		        <a href="/ruby-on-rails/2018/02/02/5556148/">
 		            Ruby On Rails 使用 Jquery 動態新增Form
 		            <small class="subtitle">
 		                <span></span>
@@ -735,7 +549,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/02/jquery-form-validate/">
+		        <a href="/ruby-on-rails/2018/02/02/jquery-form-validate/">
 		            Ruby Jquery Form Validation Plugin
 		            <small class="subtitle">
 		                <span></span>
@@ -761,7 +575,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/02/ajax-ui-drag-menu/">
+		        <a href="/ruby-on-rails/2018/02/02/ajax-ui-drag-menu/">
 		            Ajax UI 拖拉式選單
 		            <small class="subtitle">
 		                <span></span>
@@ -795,7 +609,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/02/01/ruby-batches-sent/">
+		        <a href="/ruby-on-rails/2018/02/01/ruby-batches-sent/">
 		            ROR use Array(params[:ids])
 		            <small class="subtitle">
 		                <span>Ruby 批次送出(使用Array(params[:ids]))</span>
@@ -825,7 +639,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/31/turbolinks-keng/">
+		        <a href="/ruby-on-rails/2018/01/31/turbolinks-keng/">
 		            Turbolinks 造成的相關錯誤
 		            <small class="subtitle">
 		                <span></span>
@@ -851,7 +665,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/30/5409954/">
+		        <a href="/ruby-on-rails/2018/01/30/5409954/">
 		            有關 rest-client 抓取 當前網址的回應response
 		            <small class="subtitle">
 		                <span></span>
@@ -877,7 +691,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/30/5409711/">
+		        <a href="/ruby-on-rails/2018/01/30/5409711/">
 		            介紹 impressionist gem 瀏覽量插件(點擊率)
 		            <small class="subtitle">
 		                <span></span>
@@ -915,7 +729,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/30/5409497/">
+		        <a href="/ruby-on-rails/2018/01/30/5409497/">
 		            Jquery Gem安裝相關特效
 		            <small class="subtitle">
 		                <span></span>
@@ -941,7 +755,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/30/5408873/">
+		        <a href="/ruby-on-rails/2018/01/30/5408873/">
 		            Asset Pipeline 說明
 		            <small class="subtitle">
 		                <span></span>
@@ -969,7 +783,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/30/5408775/">
+		        <a href="/ruby-on-rails/2018/01/30/5408775/">
 		            使用figaro管理機密資訊或密碼的gem以及fog(照片)gem且部署到heroku上面
 		            <small class="subtitle">
 		                <span></span>
@@ -1015,7 +829,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/28/rails-generates-html-code-to-the-front/">
+		        <a href="/ruby-on-rails/2018/01/28/rails-generates-html-code-to-the-front/">
 		            Rails 生成HTML代碼至前端
 		            <small class="subtitle">
 		                <span></span>
@@ -1045,7 +859,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/27/ruby-user-pdf-upload/">
+		        <a href="/ruby-on-rails/2018/01/27/ruby-user-pdf-upload/">
 		            Ruby carrierwave上傳檔案以及使用多檔案上傳
 		            <small class="subtitle">
 		                <span></span>
@@ -1364,12 +1178,20 @@
 	
 	
 	
-	
-	
-	
-	
   </tbody>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pjax_loading">
+      <div class="spinner">
+        <div class="spinner-text">Loading</div>
+        <div class="spinner-sector spinner-sector-red"></div>
+        <div class="spinner-sector spinner-sector-blue"></div>
+        <div class="spinner-sector spinner-sector-green"></div>
+      </div>
     </div>
   </body>
 </html>

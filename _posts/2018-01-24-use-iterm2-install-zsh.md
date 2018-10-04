@@ -3,7 +3,7 @@ layout: post
 title: '使用iterm2安裝 zsh'
 date: 2018-01-24 14:02
 comments: true
-categories:
+categories: Terminal
 tags: Terminal ZSH
 ---
 shell to zsh在iterms2輸入

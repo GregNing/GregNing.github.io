@@ -20,14 +20,11 @@
   
     <link rel="stylesheet" href="/public/css/main.css" media="screen" type="text/css">
   
-    <link rel="stylesheet" href="/public/css/poole.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" media="screen" type="text/css">
   
     <link rel="stylesheet" href="/public/css/syntax.css" media="screen" type="text/css">
   
-    <link rel="stylesheet" href="/public/css/hyde.css" media="screen" type="text/css">
-  
-    <link rel="stylesheet" href="/public/css/prettify.css" media="screen" type="text/css">
-  
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css.map" media="screen" type="text/css">
 
 
   <link rel="stylesheet" href="/public/css/font-awesome/font-awesome.css" media="screen" type="text/css">
@@ -38,275 +35,114 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- JS -->
+  
+    <script>var duoshuoQuery = { short_name: "maydaycoder" };</script>
+    
+      <script src="/assets/javascript/jquery.js"></script>
+    
+      <script src="/assets/javascript/jquery.pjax.js"></script>
+    
+      <script src="/assets/javascript/embed.js"></script>
+    
+      <script src="/assets/javascript/default.js"></script>
+    
+  
 </head>
 
   <body>
-    <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="/">
-          Greg's Blog
+    <div class="menubar-container">
+  <div class="container">
+    <div class="row">
+      <div class="site-home">
+        <a href="/" title="前往Greg Blog首頁">
+          <span>Greg's Blog</span>
         </a>
-      </h1>
-      <p class="lead">Hello Welcome to Greg Blog!</p>
+      </div>
+      <nav role="navigation" class="navbar">
+        <div class="site-menu">
+          <ul>
+            <li>
+              <a class="pjaxlink" href="/" data-hover="Home">Home</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/about" data-hover="About">About</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/category" data-hover="Category">Category</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/searchTag" data-hover="Tag Cloud">Tag Cloud</a>
+            </li>
+            <li>
+              <a class="pjaxlink" href="/pages/archive" data-hover="Archive">Archive</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menubar-search-block">
+          <label class="menubar-search" title="Search Greg's Posts">
+            <span class="fa fa-search" aria-hidden="true"></span>
+            <input
+              type="text"
+              class="search-query st-default-search-input"
+              placeholder="Search Posts"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off">
+          </label>
+        </div>
+        </div>
+      </nav>
     </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/"">Home</a>
-
-      
-
-      
-      
-        
-          
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/searchTag/">Search Tag</a>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-
-      <span class="sidebar-nav-item">
-        <ul class="list-inline text-center">
-          <li>
-            <a href="https://github.com/GregNing">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x"></i>
-              </span>
-            </a>
-          </li>
-
-        </ul>
-      </span>
-    </nav>
-
-    <p>&copy; Copyright 2018 | Greg's Blog | All rights reserved</p>
   </div>
 </div>
-
-    <div class="content container">
-      <h2 class="tag-summary-title">&#60;figaro&#62;</h2>
+    <div class="content g-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left sidebar-left">
+  <div class="profile">
+    <div class="profile-info">
+      <div class="profile-img">
+          <img src="/public/profile_img.jpg">
+      </div>
+      <h2>Greg Yang</h2>
+      <h3>Developer</h3>
+      <span class="location">
+        <i class="fa fa-map-marker">
+          <span>Taipei, Taiwan</span>
+        </i>
+      </span>
+    </div>
+    <div class="profile-integral">
+      <div class="posts-total-count">
+            
+             108 
+          <span>POSTS</span>
+      </div>
+        <div>
+          <span>
+            
+             35 
+          </span>
+          <span>TAGS</span>
+        </div>
+    </div>
+    <div class="profile-link">
+      <ul>
+        <li>
+            <a href="https://github.com/GregNing" target="_blank" title="Greg GitHub">
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 box-shadow fadein-right sidebar-right">
+            <div class="page-content" id="pjax">
+              <h2 class="tag-summary-title">&#60;figaro&#62;</h2>
 <table class="table table-striped tag-summary">
   <tbody>
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -553,7 +389,7 @@
 	<tr>
 	    <td>
 		    <h3 class="tag-body">
-		        <a href="/2018/01/30/5408775/">
+		        <a href="/ruby-on-rails/2018/01/30/5408775/">
 		            使用figaro管理機密資訊或密碼的gem以及fog(照片)gem且部署到heroku上面
 		            <small class="subtitle">
 		                <span></span>
@@ -902,12 +738,20 @@
 	
 	
 	
-	
-	
-	
-	
   </tbody>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pjax_loading">
+      <div class="spinner">
+        <div class="spinner-text">Loading</div>
+        <div class="spinner-sector spinner-sector-red"></div>
+        <div class="spinner-sector spinner-sector-blue"></div>
+        <div class="spinner-sector spinner-sector-green"></div>
+      </div>
     </div>
   </body>
 </html>

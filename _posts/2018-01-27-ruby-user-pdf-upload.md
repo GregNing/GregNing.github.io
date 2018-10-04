@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby carrierwave上傳檔案以及使用多檔案上傳'
 date: 2018-01-27 13:05
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Ruby Gem Rails
 ---
 Gemfile安裝[carrierwave](https://github.com/carrierwaveuploader/carrierwave)

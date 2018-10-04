@@ -3,7 +3,7 @@ layout: post
 title: 'HTML異步加載Script'
 date: 2018-02-04 18:09
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'rails use async'
 tags: Rails
 ---

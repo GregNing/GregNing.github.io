@@ -3,7 +3,7 @@ layout: post
 title: 'Mac Terminal 登入訊息修改'
 date: 2018-05-02 16:29
 comments: true
-categories:
+categories: Terminal
 tags: Terminal
 ---
 {% capture string_with_newlines %}

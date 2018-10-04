@@ -3,7 +3,7 @@ layout: post
 title: 'Ryby redirect用法'
 date: 2018-01-28 14:51
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Ruby
 ---
 在此示範是在 admin::jobs Controller裡面

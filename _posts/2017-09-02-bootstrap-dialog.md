@@ -3,7 +3,7 @@ layout: post
 title: 'BootstrapDialog 使用 以及文件引用'
 date: 2017-09-02 16:16
 comments: true
-categories:
+categories: Bootstrap
 tags: Bootstrap JS
 ---
 

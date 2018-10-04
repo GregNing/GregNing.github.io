@@ -3,7 +3,7 @@ layout: post
 title: 'MongoDB BSON::Objectid Introduction'
 date: 2018-07-27 01:17
 comments: true
-categories:
+categories: Mongod
 description: 'MongoDB 探討 BSON::Objectid'
 tags: Mongod
 ---

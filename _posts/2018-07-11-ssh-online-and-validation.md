@@ -3,7 +3,7 @@ layout: post
 title: 'ssh 連線以及驗證'
 date: 2018-07-11 00:16
 comments: true
-categories:
+categories: ssh
 tags: ssh
 ---
 {% capture string_with_newlines %}

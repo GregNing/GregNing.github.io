@@ -19,7 +19,7 @@ author:
   name              : 'Greg'
   url               : https://github.com/GregNing
 
-paginate            : 8
+paginate            : 5
 # tags
 tag:
   jekyll            : https://jekyllrb.com/
@@ -33,10 +33,16 @@ sass:
 
 custom_css:
   - main
-  - poole
+  - bootstrap.min
+  # - poole
   - syntax
-  - hyde
-  - prettify
+  # - hyde
+
+plugin_js:
+  - jquery
+  - jquery.pjax
+  - embed
+  - default
 
 custom_js:
   - prettify

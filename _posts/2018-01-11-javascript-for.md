@@ -3,7 +3,7 @@ layout: post
 title: 'Javascript(ES6) loop迴圈'
 date: 2018-01-11 03:04
 comments: true
-categories:
+categories: JS
 tags: JS
 ---
 For Loop 迴圈

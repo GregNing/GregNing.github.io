@@ -3,7 +3,7 @@ layout: post
 title: 'use mixin and autoload_paths vs eager_load_paths'
 date: 2018-03-01 18:31
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: '使用 mixin 以及 autoload_paths vs eager_load_paths解說'
 tags: Ruby
 ---

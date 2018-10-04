@@ -3,7 +3,7 @@ layout: post
 title: 'ROR DDOS defense'
 date: 2018-02-04 14:22
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: 'Ruby On Rails DDos防禦'
 tags: Ruby
 ---

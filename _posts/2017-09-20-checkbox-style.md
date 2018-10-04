@@ -3,7 +3,7 @@ layout: post
 title: 'CheckBox Style'
 date: 2017-09-20 09:26
 comments: true
-categories:
+categories: CSS
 tags: CSS
 ---
 ##### 我選用的是squaredFour

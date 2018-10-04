@@ -3,7 +3,7 @@ layout: post
 title: 'MVC Cache VS ObjectCache'
 date: 2017-09-11 16:53
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 

@@ -1,0 +1,43 @@
+<div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left sidebar-left">
+  <div class="profile">
+    <div class="profile-info">
+      <div class="profile-img">
+          <img src="{{ base.url | prepend: site.auth.url }}/public/profile_img.jpg">
+      </div>
+      <h2>Greg Yang</h2>
+      <h3>Developer</h3>
+      <span class="location">
+        <i class="fa fa-map-marker">
+          <span>Taipei, Taiwan</span>
+        </i>
+      </span>
+    </div>
+    <div class="profile-integral">
+      <div class="posts-total-count">
+            {% for post in site.posts %}
+              {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+            {% endfor %}
+            {{ post_count }}
+          <span>POSTS</span>
+      </div>
+        <div>
+          <span>
+            {% for post in site.tags %}
+              {% capture post_tags %} {{ post_tags | plus: 1 }} {% endcapture %}
+            {% endfor %}
+            {{ post_tags }}
+          </span>
+          <span>TAGS</span>
+        </div>
+    </div>
+    <div class="profile-link">
+      <ul>
+        <li>
+            <a href="{{ site.github.repo }}" target="_blank" title="Greg GitHub">
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

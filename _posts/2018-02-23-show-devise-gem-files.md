@@ -3,7 +3,7 @@ layout: post
 title: 'show devise gem files'
 date: 2018-02-23 16:41
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: '顯示 devise 有關的檔案'
 tags: Ruby Rails
 ---

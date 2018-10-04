@@ -3,31 +3,45 @@ layout: default
 comments: true
 ---
 
-<div class="post">
+<div class="article-inner">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+  <header class="article-meta">
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <time datetime="{{ page.date | date: %Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date_to_string }}</time>
+    </div>
+    <div class="article-tags">
+      <i class="fa fa-tags"></i> :
+      {% for tag in page.tags %}
+        <a class="tag-wrapper" href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">
+          {{ tag }}
+        </a>
+        {% if forloop.last != true %} {% endif %} {% endfor %}
+    </div>
+  </header>
+  <div class="article-info">
+    {{ content }}
+  </div>
 </div>
-{% include intro_message.html %}
 <div class="related">
-  <h2>Related Posts</h2>
+  <h3>Related Posts</h3>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
-        <h3>
+        <h4>
           <a href="{{ post.url }}">
             {{ post.title }}
             <small>{{ post.date | date_to_string }}</small>
           </a>
-        </h3>
+        </h4>
       </li>
     {% endfor %}
   </ul>
   {% include comments.html %}
 </div>
+
 {% if site.custom_js %}
   {% for javascript in site.custom_js %}
     <script src="{{ prepend: site.baseurl }}/assets/javascript/{{ javascript }}.js"></script>
   {% endfor %}
 {% endif %}
-<!-- <script src="{{ prepend: site.baseurl }}/assets/javascript/site.js"></script> -->

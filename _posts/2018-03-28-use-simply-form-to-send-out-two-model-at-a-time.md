@@ -3,7 +3,7 @@ layout: post
 title: 'simple_form 使用兩個model'
 date: 2018-03-28 16:52
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Rails
 ---
 [simple_form user two model ](https://github.com/plataformatec/simple_form/wiki/Nested-Models)

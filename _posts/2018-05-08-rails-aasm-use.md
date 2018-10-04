@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby AASM使用'
 date: 2018-05-08 15:21
 comments: true
-categories:
+categories: Ruby
 tags: Ruby
 ---
 [AASM](https://github.com/aasm/aasm)，是一個狀態管理的gem，可以更好的幫助你管理各種在不同時間的不同狀態。

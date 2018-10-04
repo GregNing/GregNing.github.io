@@ -3,7 +3,7 @@ layout: post
 title: 'Rails 生成HTML代碼至前端'
 date: 2018-01-28 14:11
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Ruby Rails
 ---
 在Helper 裡面大多數的 method都是給給前端所使用的包括一些判斷

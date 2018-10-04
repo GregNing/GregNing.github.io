@@ -3,7 +3,7 @@ layout: post
 title: 'Mongodb query operator'
 date: 2018-08-19 23:35
 comments: true
-categories:
+categories: Mongod
 description: 'Mongodb query operator(條件查詢)'
 tags: Mongod
 ---

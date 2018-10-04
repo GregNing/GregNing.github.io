@@ -3,7 +3,7 @@ layout: post
 title: 'User Login FormsAuthentication in Cookies MVC 有關驗證以及Cookies'
 date: 2017-10-02 08:50
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 #### 雖然都是程式碼但請實作一次。

@@ -3,7 +3,7 @@ layout: post
 title: 'Ruby Array & Hash '
 date: 2018-02-01 03:13
 comments: true
-categories:
+categories: Ruby-On-Rails
 tags: Ruby
 ---
 For posterity, below is the answer for versions of ruby < 2.1.0:

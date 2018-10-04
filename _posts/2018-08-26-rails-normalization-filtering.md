@@ -3,7 +3,7 @@ layout: post
 title: 'Rails 特殊字元過濾(白名單)'
 date: 2018-08-26 17:21
 comments: true
-categories:
+categories: Ruby-On-Rails
 description: '使用 Rails 過濾特殊字元方法'
 tags: Rails
 ---

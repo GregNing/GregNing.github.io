@@ -3,8 +3,8 @@ layout: post
 title: 'RadioButton 使用'
 date: 2017-08-21 16:52
 comments: true
-categories:
-tags: CSS
+categories: Jquery
+tags: Jquery
 ---
 
 ##### Get Radio Button Value with Javascript

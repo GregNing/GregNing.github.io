@@ -3,7 +3,7 @@ layout: post
 title: 'Mongoid Iterating Over Large Collections no_timeout use no_timeout 使用'
 date: 2018-08-11 02:06
 comments: true
-categories:
+categories: Mongod
 description: 'Mongoid Iterating Over Large Collections(大量數據跑迴圈)'
 tags: Mongod
 ---

@@ -3,7 +3,7 @@ layout: post
 title: 'Not Found fontawesome-webfont.woff?v=4.0.3'
 date: 2017-08-28 02:47
 comments: true
-categories:
+categories: MVC
 tags: Csharp CSS MVC
 ---
 當使用`font awesome`套件 網頁出現fontawesome-webfont.woff?v=% 找不到此文件之類的問題

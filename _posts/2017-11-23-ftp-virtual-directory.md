@@ -3,7 +3,7 @@ layout: post
 title: '使用 IIS 建立 FTP 虛擬目錄 以及隔離使用者教學'
 date: 2017-11-23 02:09
 comments: true
-categories:
+categories: FTP
 tags: FTP IIS
 ---
 在FTP 建立虛擬目錄

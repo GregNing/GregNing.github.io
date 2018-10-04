@@ -3,7 +3,7 @@ layout: post
 title: 'MVC 使用 JWT'
 date: 2018-01-25 08:52
 comments: true
-categories:
+categories: MVC
 tags: Csharp MVC JWT
 ---
 JWT是Json Web Token的縮寫，詳細規範在[RFC7519](https://tools.ietf.org/html/rfc7519)中，目的是用來傳遞JSON物件並且透過雜湊簽章來確保資料沒有被變更過。因此我們可以把它當作驗證的token來用，也可以用來在兩個client之間傳遞資料。

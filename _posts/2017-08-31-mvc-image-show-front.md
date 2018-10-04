@@ -3,7 +3,7 @@ layout: post
 title: 'MVC POST 照片去前端使用方式'
 date: 2017-08-31 02:40
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 

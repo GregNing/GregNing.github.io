@@ -3,7 +3,7 @@ layout: post
 title: 'ASP.Net web.config Settings Session'
 date: 2017-12-29 03:14
 comments: true
-categories:
+categories: MVC
 tags: MVC Csharp
 ---
 從web.config 設定 Session 相關資訊<br>
