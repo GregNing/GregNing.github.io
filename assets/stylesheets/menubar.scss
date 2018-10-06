@@ -3,6 +3,10 @@
   width: 100%;
   z-index: 9999;
 
+  @media(max-width: 820px) {
+    position: relative;
+  }
+
   .container {
     width: 100%;
     height: 100%;
@@ -32,7 +36,10 @@
       }
       .navbar {
         margin: auto;
-        max-width: 1000px;
+
+        @media(min-width: 820px) {
+          max-width: 1000px;
+        }
         width: 100%;
         height: 50px;
 
@@ -91,10 +98,11 @@
         .menubar-search-block {
           float: right;
           height: 50px;
-          line-height: 3.5;
 
           label {
+            display: block;
             span {
+              margin: auto;
               vertical-align: middle;
               color: #8d8d8d;
               -webkit-transition: .1s background-color,.1s border-color,.1s color,.1s fill;
@@ -118,7 +126,6 @@
               padding-left: 1px;
               padding-right: 0;
               font-family: MicrosoftJhengHei;
-              font-weight: 300;
               letter-spacing: 1.4px;
               font-weight: 450;
 
@@ -130,6 +137,70 @@
               &.input-text {
                 width: 150px;
               }
+            }
+
+            i.fa-times {
+              font-weight: 300;
+              vertical-align: middle;
+              display: none;
+            }
+          }
+        }
+      }
+      @media(max-width: 820px) {
+        .site-home {
+          width: 100%;
+          height: 45px;
+          border-bottom: 1px solid #d0d0d0;
+          a {
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+
+        .navbar {
+          min-height: 44px;
+
+          .site-menu {
+            line-height: inherit;
+            height: 44px;
+            padding-left: 10px;
+
+            ul {
+              li {
+                a {
+                  line-height: inherit;
+                  padding: 13px 6px;
+                  color: #5a5a5a;
+                  font-weight: 400;
+
+                  &::before {
+                    content: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .menubar-search-block {
+            display: none;
+            height: 44px;
+
+            &.search-min-block {
+              width: 100%;
+
+              input[type='text'] {
+                width: 85%;
+              }
+
+              i.fa-times {
+                display: inline-block;
+              }
+            }
+
+            span {
+              color: #8d8d8d;
+              margin-top: 5px;
             }
           }
         }

@@ -18,10 +18,8 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 80) {
         siteHome.setAttribute('style', 'display:none;');
         menubarContainer.setAttribute('style', 'border-bottom: 1px solid #ebebeb');
-    //   $("#backtotop").addClass("showme");
     }
     else {
-    //   $("#backtotop").removeClass("showme");
         siteHome.removeAttribute('style');
         menubarContainer.removeAttribute('style');
     }
@@ -31,17 +29,4 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: 0 }, 400);
         return false;
     });
-//   document.getElementsByClassName('fa-search')[0].addEventListener('click', (e) => {
-//     document.getElementsByClassName('search-query')[0].classList += ' input-text';
-//   })
-//   document.addEventListener('click', (e) => {
-//     let searchQueryClass = document.getElementsByClassName('search-query')[0].classList;
-//     if (e.target.classList[1] === 'fa-search') {
-//       searchQueryClass += ' input-text';
-//     }
-//     else{
-//       searchQueryClass.remove('input-text');
-//     }
-//   })
-
 });
