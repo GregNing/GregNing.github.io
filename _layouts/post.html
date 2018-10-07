@@ -39,9 +39,3 @@ comments: true
   </ul>
   {% include comments.html %}
 </div>
-
-{% if site.custom_js %}
-  {% for javascript in site.custom_js %}
-    <script src="{{ prepend: site.baseurl }}/assets/javascript/{{ javascript }}.js"></script>
-  {% endfor %}
-{% endif %}

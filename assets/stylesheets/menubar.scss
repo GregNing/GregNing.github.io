@@ -101,6 +101,8 @@
 
           label {
             display: block;
+            margin-top: 5px;
+            padding-right: 15px;
             span {
               margin: auto;
               vertical-align: middle;
@@ -118,8 +120,7 @@
             .search-query {
               display: inline-block;
               vertical-align: middle;
-              width: 1px;
-              height: 37px;
+              width: .5px;
               border: none;
               -webkit-transition: width .2s,padding .2s;
               transition: width .2s,padding .2s;
@@ -128,10 +129,11 @@
               font-family: MicrosoftJhengHei;
               letter-spacing: 1.4px;
               font-weight: 450;
+              background: none;
 
               &:focus {
                 outline: none;
-                width: 150px;
+                width: 180px;
               }
 
               &.input-text {

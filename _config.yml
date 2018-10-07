@@ -34,16 +34,12 @@ sass:
 custom_css:
   - main
   - bootstrap.min
-  # - poole
   - syntax
-  # - hyde
 
 plugin_js:
   - jquery
   - jquery.pjax
-  - embed
+  - prettify
   - default
 
-custom_js:
-  - prettify
-  - site
+disqus_name: greg-yang
