@@ -5,6 +5,13 @@ date: 2017-09-18 16:46
 comments: true
 categories: Jquery
 tags: Jquery CSS
+reference:
+  name:
+    - jquery-file-upload-preview-image
+    - preview-an-image-before-it-is-uploaded
+  link:
+    - https://stackoverflow.com/questions/21128634/jquery-file-upload-preview-image
+    - https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
 ---
 ```js
 var reader = new FileReader();
@@ -24,5 +31,3 @@ $(".managementupload .userimges").show();
   reader.readAsDataURL(input.files[0]);
 }
 ```
- [jquery-file-upload-preview-image](https://stackoverflow.com/questions/21128634/jquery-file-upload-preview-image)<br>
- [preview-an-image-before-it-is-uploaded](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded)

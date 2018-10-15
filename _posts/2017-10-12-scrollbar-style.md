@@ -5,8 +5,16 @@ date: 2017-10-12 16:48
 comments: true
 categories: CSS
 tags: CSS
+reference:
+  name:
+    - scrollbars
+    - scrollbars style
+  link:
+    - https://css-tricks.com/custom-scrollbars-in-webkit/
+    - https://codepen.io/devstreak/pen/dMYgeO
 ---
 首先介紹捲動軸<br>
+{% capture string_with_newlines %}
 `::-webkit-scrollbar`: 代表整個捲動軸
 ![scrollbar.PNG](https://s3-ap-northeast-1.amazonaws.com/gregningpublic/5DGXnhAuTD2TbX784Gli_scrollbar.PNG)
 `::-webkit-scrollbar-button`: 代表捲動軸上下按鈕
@@ -17,6 +25,8 @@ tags: CSS
 ![scrollbar-track-piece .PNG](https://s3-ap-northeast-1.amazonaws.com/gregningpublic/fzOVGByTLyL5sUZp7ZQk_scrollbar-track-piece+.PNG)
 `::-webkit-scrollbar-thumb`: 重點來了這是捲動軸
 ![scrollbar-thumb.PNG](https://s3-ap-northeast-1.amazonaws.com/gregningpublic/ke9cL9XTOasv6mJcorgA_scrollbar-thumb.PNG)
+{% endcapture %}
+{{ string_with_newlines | newline_to_br }}
 `::-webkit-scrollbar-corner`: 位於右下角的空白處介於`overflow-y`與`overflow-x`之間。<br>
 `::-webkit-resizer`: 這是右下角拉取視窗大小地方
 以下是捲動軸Style
@@ -39,8 +49,3 @@ tags: CSS
   border-radius: 10px;
 }
 ```
-{% capture string_with_newlines %}
-[scrollbars](https://css-tricks.com/custom-scrollbars-in-webkit/)
-[style](https://codepen.io/devstreak/pen/dMYgeO)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

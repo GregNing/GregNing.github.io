@@ -5,6 +5,11 @@ date: 2017-08-23 03:27
 comments: true
 categories: MVC
 tags: Csharp MVC
+reference:
+  name:
+    - asp-net-mvc-validation
+  link:
+    - http://blog.darkthread.net/post-2011-07-04-asp-net-mvc-inline-validation-chinese.aspx
 ---
 ASP.NET MVC針對`Create/Edit View`提供了方便好用的Client端驗證機制, 但對我來說有一點"美中不足": 在專案中我常使用如下圖的"表格式欄位排版"，預設驗證訊息會被接在欄位的正後方，多出的文字會增加<td>的寬度，即使換行顯示在下方也會增加<td>的高度，無論如何都會破壞原本的畫面配置。
 ![1229-967e-o.gif](http://user-image.logdown.io/user/29283/blog/28339/post/2207613/W0oADruTRvKZrPBh5obd_1229-967e-o.gif)
@@ -26,5 +31,3 @@ $(function () {
 ```
 在Create.cshtml動點小手腳後，可以看見驗證訊息已改出現在右上角，不再破壞原本的排版囉!
 ![1230-b009-o.gif](http://user-image.logdown.io/user/29283/blog/28339/post/2207613/8HLpio56SA2WlFIwIRVQ_1230-b009-o.gif)
-
-[文章來源](http://blog.darkthread.net/post-2011-07-04-asp-net-mvc-inline-validation-chinese.aspx)

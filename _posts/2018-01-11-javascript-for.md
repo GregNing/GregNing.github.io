@@ -5,6 +5,13 @@ date: 2018-01-11 03:04
 comments: true
 categories: JS
 tags: JS
+reference:
+  name:
+    - For loop
+    - Add ClassName
+  link:
+    - https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements
+    - https://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript
 ---
 For Loop 迴圈
 ```js
@@ -26,6 +33,3 @@ document.getElementById("MyElement").classList.remove('MyClass');
 if ( document.getElementById("MyElement").classList.contains('MyClass') )
 document.getElementById("MyElement").classList.toggle('MyClass');
 ```
-參考:
-[For loop](https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements)
-[Add ClassName](https://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript)

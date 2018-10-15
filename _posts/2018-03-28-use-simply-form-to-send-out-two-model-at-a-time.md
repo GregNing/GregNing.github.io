@@ -5,8 +5,13 @@ date: 2018-03-28 16:52
 comments: true
 categories: Ruby-On-Rails
 tags: Rails
+reference:
+  name:
+    - simple_form user two model
+  link:
+    - https://github.com/plataformatec/simple_form/wiki/Nested-Models
 ---
-[simple_form user two model ](https://github.com/plataformatec/simple_form/wiki/Nested-Models)
+
 ### 目標: 在 view 中使用兩個 model
 > 首先在model 先套上`accepts_nested_attributes_for`只限於`one_to_one or one_to_many`
 ```rb

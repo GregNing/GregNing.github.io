@@ -5,6 +5,13 @@ date: 2017-08-31 02:40
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - set-src-property-in-view-to-a-url-outside-of-the-mvc
+    - MVC use razor
+  link:
+    - https://stackoverflow.com/questions/12589771/set-src-property-in-view-to-a-url-outside-of-the-mvc3-project
+    - https://stackoverflow.com/questions/351937/in-asp-net-mvc-how-can-i-use-the-razor-url-content-helper-from-c-sharp-code
 ---
 
 ##### 使用Url.Content(轉相對目錄) 方式，虛擬路徑
@@ -38,5 +45,3 @@ public class ImagesController: Controller
 兩者差異在於`Url.Action`能使用在其他目錄以及FTP上擷取圖片但如果使用`Url.Content`會有權限等等的一些問題而且只能在跟目錄底下去運作。<br>
 使用目錄外請使用`Url.Action`但請記得要`return File`相關的`contentType`。<br>
 目錄內例:`Content Images`資料夾內部可以使用`Url.Content`。<br>
-[set-src-property-in-view-to-a-url-outside-of-the-mvc](https://stackoverflow.com/questions/12589771/set-src-property-in-view-to-a-url-outside-of-the-mvc3-project)<br>
-[mvc use razor](https://stackoverflow.com/questions/351937/in-asp-net-mvc-how-can-i-use-the-razor-url-content-helper-from-c-sharp-code)

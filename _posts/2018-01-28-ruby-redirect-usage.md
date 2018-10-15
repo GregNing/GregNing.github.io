@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ryby redirect用法'
+title: 'Ruby redirect用法'
 date: 2018-01-28 14:51
 comments: true
 categories: Ruby-On-Rails

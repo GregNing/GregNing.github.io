@@ -5,6 +5,21 @@ date: 2018-01-25 08:52
 comments: true
 categories: MVC
 tags: Csharp MVC JWT
+reference:
+  name:
+    - RFC7519
+    - 安裝Nuget套件OWIN Host SystemWeb
+    - 參考JWT
+    - 驗證token資訊
+    - 在這是注意SHA256使用
+    - token-authentication-asp-net-core
+  link:
+    - https://tools.ietf.org/html/rfc7519
+    - https://www.nuget.org/packages/Microsoft.Owin.Host.SystemWeb/
+    - https://dotblogs.com.tw/libtong/2018/01/15/144410
+    - https://stackoverflow.com/questions/29355384/when-is-jwtsecuritytokenhandler-validatetoken-actually-valid
+    - https://stackoverflow.com/questions/39080740/how-to-generate-jwt-token-with-identitymodel-extensions-for-net-5
+    - https://stormpath.com/blog/token-authentication-asp-net-core
 ---
 JWT是Json Web Token的縮寫，詳細規範在[RFC7519](https://tools.ietf.org/html/rfc7519)中，目的是用來傳遞JSON物件並且透過雜湊簽章來確保資料沒有被變更過。因此我們可以把它當作驗證的token來用，也可以用來在兩個client之間傳遞資料。
 
@@ -233,13 +248,6 @@ private bool validateAJAXTokenAttribute(ActionExecutingContext filterContext)
   return result;
 }
 ```
-{% capture string_with_newlines %}
-[參考JWT](https://dotblogs.com.tw/libtong/2018/01/15/144410)
-[驗證token資訊](https://stackoverflow.com/questions/29355384/when-is-jwtsecuritytokenhandler-validatetoken-actually-valid)
-[在這是注意SHA256使用](https://stackoverflow.com/questions/39080740/how-to-generate-jwt-token-with-identitymodel-extensions-for-net-5)
-[token-authentication-asp-net-core](https://stormpath.com/blog/token-authentication-asp-net-core)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}
 若有發生以下問題:
 ```
 IDX10603: The 'System.IdentityModel.Tokens.InMemorySymmetricSecurityKey' cannot have less than: '128' bits. Parameternavn: key.KeySize The actual size was 48錯誤

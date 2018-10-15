@@ -5,6 +5,15 @@ date: 2018-01-09 02:27
 comments: true
 categories: MVC
 tags: Csharp MVC
+reference:
+  name:
+    - Roles Attrubute
+    - 導向錯誤頁設定
+    - 詳細導向錯誤相關資訊
+  link:
+    - https://stackoverflow.com/questions/24181888/authorize-attribute-with-multiple-roles
+    - https://stackoverflow.com/questions/2504923/how-to-redirect-authorize-to-loginurl-only-when-roles-are-not-used
+    - https://stackoverflow.com/questions/1485640/so-very-very-confused-about-authentication-in-asp-net-mvc
 ---
 
 MVC 使用權限設定
@@ -103,7 +112,3 @@ public class MyController : Controller
   {return View();}
 }
 ```
-來源:
-新增[roles Attrubute](https://stackoverflow.com/questions/24181888/authorize-attribute-with-multiple-roles)
-[導向錯誤頁設定](https://stackoverflow.com/questions/2504923/how-to-redirect-authorize-to-loginurl-only-when-roles-are-not-used)
-[詳細導向錯誤相關資訊](https://stackoverflow.com/questions/1485640/so-very-very-confused-about-authentication-in-asp-net-mvc)

@@ -5,7 +5,17 @@ date: 2018-01-27 13:05
 comments: true
 categories: Ruby-On-Rails
 tags: Ruby Gem Rails
+reference:
+  name:
+    - carrierwave
+    - strong parameters
+    - MiniMagick
+  link:
+    - https://github.com/carrierwaveuploader/carrierwave
+    - https://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters
+    - https://github.com/minimagick/minimagick
 ---
+
 Gemfile安裝[carrierwave](https://github.com/carrierwaveuploader/carrierwave)
 ```rb
 gem 'carrierwave'

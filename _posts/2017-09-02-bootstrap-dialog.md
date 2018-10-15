@@ -5,6 +5,11 @@ date: 2017-09-02 16:16
 comments: true
 categories: Bootstrap
 tags: Bootstrap JS
+reference:
+  name:
+    - bootstrap3-dialog
+  link:
+    - https://github.com/nakupanda/bootstrap3-dialog
 ---
 
 使用前請先去[bootstrap3-dialog](https://github.com/nakupanda/bootstrap3-dialog)這網址下載以下文件:<br>
@@ -48,4 +53,3 @@ BootstrapDialog.show({
   }]
 });
 ```
-[bootstrap3-dialog](https://nakupanda.github.io/bootstrap3-dialog/)

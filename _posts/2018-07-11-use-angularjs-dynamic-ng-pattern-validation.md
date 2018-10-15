@@ -5,6 +5,21 @@ date: 2018-07-11 13:24
 comments: true
 categories: Angularjs
 tags: Angularjs
+reference:
+  name:
+    - 正規化表達式
+    - Angularjs dynamic ng-pattern validation
+    - Angularjs change value use ngModel
+    - Angular add key code
+    - Javascript - Emulate a space bar keypress
+    - How to get keypress if press a key anywhere in the document?
+  link:
+    - http://blog.jex.tw/blog/2013/01/16/regex/
+    - https://stackoverflow.com/questions/18900308/angularjs-dynamic-ng-pattern-validation
+    - https://stackoverflow.com/questions/22639485/angularjs-how-to-change-the-value-of-ngmodel-in-custom-directive
+    - https://stackoverflow.com/questions/17470790/how-to-use-a-keypress-event-in-angularjs
+    - https://stackoverflow.com/questions/34017695/javascript-emulate-a-space-bar-keypress
+    - https://stackoverflow.com/questions/46329525/how-to-get-keypress-if-press-a-key-anywhere-in-the-document
 ---
 我們要使用正規化來限制使用者輸入某些特殊字元
 原本是
@@ -86,12 +101,3 @@ $scope.phoneNumberPattern = (function() {
     };
 })();
 ```
-{% capture string_with_newlines %}
-[正規化表達式](http://blog.jex.tw/blog/2013/01/16/regex/)
-[Angularjs dynamic ng-pattern validation](https://stackoverflow.com/questions/18900308/angularjs-dynamic-ng-pattern-validation)
-[Angularjs change value use ngModel](https://stackoverflow.com/questions/22639485/angularjs-how-to-change-the-value-of-ngmodel-in-custom-directive)
-[angular add key code](https://stackoverflow.com/questions/17470790/how-to-use-a-keypress-event-in-angularjs)
-[Javascript - Emulate a space bar keypress](https://stackoverflow.com/questions/34017695/javascript-emulate-a-space-bar-keypress)
-[How to get keypress if press a key anywhere in the document?](https://stackoverflow.com/questions/46329525/how-to-get-keypress-if-press-a-key-anywhere-in-the-document)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

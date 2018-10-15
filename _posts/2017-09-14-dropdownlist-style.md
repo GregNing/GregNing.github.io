@@ -5,7 +5,13 @@ date: 2017-09-14 01:38
 comments: true
 categories: MVC
 tags: CSS MVC
+reference:
+  name:
+    - drop-down-style
+  link:
+    - https://tympanus.net/codrops/2012/10/04/custom-drop-down-list-styling/
 ---
+
 如果不喜歡使用
 ```HTML
 @Html.DropDownListFor(x => x.name, (SelectList)ViewData["listame"], new { @class = "dropdownlist" })
@@ -183,4 +189,3 @@ $(function () {
   $('.wrapper-dropdown').removeClass('active');
 })
 ```
-[drop-down-style](https://tympanus.net/codrops/2012/10/04/custom-drop-down-list-styling/)

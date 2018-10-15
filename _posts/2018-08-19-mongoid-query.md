@@ -6,6 +6,15 @@ comments: true
 categories: Mongod
 description: 'Mongodb query operator(條件查詢)'
 tags: Mongod
+reference:
+  name:
+    - query hash in mongodb
+    - mongodb query operator
+    - mongodb query condition 使用說明
+  link:
+    - https://stackoverflow.com/questions/12372688/how-to-perform-this-query-on-a-hash-in-a-mongodb-document-using-mongoid
+    - https://docs.mongodb.com/manual/reference/operator/query/
+    - https://www.cnblogs.com/navy235/archive/2012/05/03/2480758.html
 ---
 使用 Ruby 進行 mongodb query 時候可以參考以下使用
 例: 我們有個Model叫做Pet
@@ -29,9 +38,5 @@ Pet.where(:id.in => ids) // 查詢Pet id 是否有 13213, 232123, '3'
 `ne`: 不等於
 `in`: 是否相符類似 `incldes` (請帶陣列)
 `nin`: 與上意思相反(不相符)
-
-[query hash in mongodb](https://stackoverflow.com/questions/12372688/how-to-perform-this-query-on-a-hash-in-a-mongodb-document-using-mongoid)
-[mongodb query operator](https://docs.mongodb.com/manual/reference/operator/query/)
-[mongodb query condition使用說明](https://www.cnblogs.com/navy235/archive/2012/05/03/2480758.html)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}

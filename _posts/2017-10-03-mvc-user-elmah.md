@@ -5,6 +5,13 @@ date: 2017-10-03 16:13
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - aspnet-mvc-elmah
+    - elmah
+  link:
+    - http://kevintsengtw.blogspot.tw/2011/10/aspnet-mvc-elmah-4.html
+    - https://jeffprogrammer.wordpress.com/2015/12/05/asp-net-mvc-%E7%9B%A3%E6%8E%A7%E7%B3%BB%E7%B5%B1%E5%81%A5%E5%BA%B7-elmah-%E4%BD%BF%E7%94%A8%E7%B4%80%E9%8C%84/
 ---
 #### 使用Elmah監控程式若出現錯誤會寄信或是寫log進資料庫，大部分的動作直接寫到`web.config`裡面。
 ```conf
@@ -113,6 +120,4 @@ errorLog type="Elmah.XmlFileErrorLog, Elmah" logPath="~/App_Data/Elmah.Errors" /
   <security allowRemoteAccess="false" />
 </elmah>
 ```
-新增到`Sql server`請使用 nuget 安裝 `ELMAH on MS SQLServer`在專案有新增`App_Readme`目錄，目錄下有`「Elmah.SqlServer.sql」`檔案，使用裡面的sql語法安裝`ELAMG`所需的store以及table可參考[aspnet-mvc-elmah](http://kevintsengtw.blogspot.tw/2011/10/aspnet-mvc-elmah-4.html)。<br>
-[aspnet-mvc-elmah](http://kevintsengtw.blogspot.tw/2011/10/aspnet-mvc-elmah-3.html)<br>
-[elmah](https://jeffprogrammer.wordpress.com/2015/12/05/asp-net-mvc-%E7%9B%A3%E6%8E%A7%E7%B3%BB%E7%B5%B1%E5%81%A5%E5%BA%B7-elmah-%E4%BD%BF%E7%94%A8%E7%B4%80%E9%8C%84/)
+新增到`Sql server`請使用 nuget 安裝 `ELMAH on MS SQLServer`在專案有新增`App_Readme`目錄，目錄下有`「Elmah.SqlServer.sql」`檔案，使用裡面的sql語法安裝`ELAMG`所需的store以及table。

@@ -5,7 +5,15 @@ date: 2018-02-01 03:13
 comments: true
 categories: Ruby-On-Rails
 tags: Ruby
+reference:
+  name:
+    - Array to Hash Ruby
+    - how-to-sort-an-array-of-hashes-in-ruby
+  link:
+    - https://stackoverflow.com/questions/4028329/array-to-hash-ruby
+    - https://stackoverflow.com/questions/5483889/how-to-sort-an-array-of-hashes-in-ruby
 ---
+
 For posterity, below is the answer for versions of ruby < 2.1.0:
 ```rb
 a = ["item 1", "item 2", "item 3", "item 4"]
@@ -16,7 +24,6 @@ h = Hash[*a] # => { "item 1" => "item 2", "item 3" => "item 4" }
 ```
 > *被稱為 splat 操作符意思，使用這一行會很耗效能，所以如果要將整個array轉成hash請使用以下方式會比較好
 `h = Hash[a.each_slice(2).to_a]`。<br>
-來源: [Array to Hash Ruby](https://stackoverflow.com/questions/4028329/array-to-hash-ruby)
 將 Array資料塞進 hash裡面並且記錄出現幾次。
 
 ```rb
@@ -47,4 +54,3 @@ arr = [
 ```rb
 result = arr.sort_by! { |hsh| hsh["age"]}
 ```
-參考: [how-to-sort-an-array-of-hashes-in-ruby](https://stackoverflow.com/questions/5483889/how-to-sort-an-array-of-hashes-in-ruby)

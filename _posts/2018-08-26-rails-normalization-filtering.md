@@ -6,6 +6,13 @@ comments: true
 categories: Ruby-On-Rails
 description: '使用 Rails 過濾特殊字元方法'
 tags: Rails
+reference:
+  name:
+    - Ruby 正規則表示式
+    - rails sanitize
+  link:
+    - http://www.runoob.com/ruby/ruby-regular-expressions.html
+    - https://stackoverflow.com/questions/32553330/sanitize-helper-in-rails
 ---
 [Rails HTML Sanitizers](https://apidock.com/rails/ActionView/Helpers/SanitizeHelper/sanitize)
 
@@ -17,8 +24,3 @@ ActionController::Base.helpers.sanitize(filter_words
 ActionController::Base.helpers.sanitize("<script>I'am script</script>")
 => "I'am script"
 ```
-{% capture string_with_newlines %}
-[Ruby 正規則表示式](http://www.runoob.com/ruby/ruby-regular-expressions.html)
-[rails sanitize](https://stackoverflow.com/questions/32553330/sanitize-helper-in-rails)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

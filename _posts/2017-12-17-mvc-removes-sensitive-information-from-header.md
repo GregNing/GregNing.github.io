@@ -5,6 +5,11 @@ date: 2017-12-17 15:00
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - ASP.NET MVC中移除冗余Response Header
+  link:
+    - http://www.cnblogs.com/buyixiaohan/p/5923226.html
 ---
 將會把X-AspNet 以及 X-Powered 相關資訊隱藏
 以下是默認訊息
@@ -50,4 +55,3 @@ protected void Application_PreSendRequestHeaders(object sender, EventArgs e)
   </customHeaders>
 </httpProtocol>
 ```
-[來源](http://www.cnblogs.com/buyixiaohan/p/5923226.html)

@@ -5,6 +5,15 @@ date: 2017-09-27 06:31
 comments: true
 categories: MVC
 tags: MVC FTP Csharp
+reference:
+  name:
+    - upload-file-to-ftp-using-c-sharp
+    - show-image-directly-from-ftp
+    - asp-net-image-source-from-ftp-address
+  link:
+    - https://stackoverflow.com/questions/15268760/upload-file-to-ftp-using-c-sharp
+    - https://stackoverflow.com/questions/30431513/show-image-directly-from-ftp
+    - https://stackoverflow.com/questions/14396744/asp-net-image-source-from-ftp-address
 ---
 首先上傳圖片有兩種方式 使用FtpWebRequest方式做上傳動作
 
@@ -128,10 +137,3 @@ tags: MVC FTP Csharp
 	//do error something
 	}
 	return File(result, "image/jpeg");
-
-{% capture string_with_newlines %}
-[upload-file-to-ftp-using-c-sharp](https://stackoverflow.com/questions/15268760/upload-file-to-ftp-using-c-sharp)
-[show-image-directly-from-ftp](https://stackoverflow.com/questions/30431513/show-image-directly-from-ftp)
-[asp-net-image-source-from-ftp-address](https://stackoverflow.com/questions/14396744/asp-net-image-source-from-ftp-address)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

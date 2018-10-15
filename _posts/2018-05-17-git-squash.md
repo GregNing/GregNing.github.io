@@ -6,6 +6,11 @@ comments: true
 description: 'git squash 介紹'
 categories: Git
 tags: Git
+reference:
+  name:
+    - Changing-a-commit-message
+  link:
+    - https://help.github.com/articles/changing-a-commit-message/
 ---
 #### `git squash` 合併目前的commit
 假設我有這麼多commit或更多
@@ -99,5 +104,3 @@ Commit-1
 接下來再看一下我們的log
 #### 使用`git log`查看紀錄即可完成
 如果想要修改 Commit message 請使用`git commit --amend`來進行修改動作
-
-[changing-a-commit-message](https://help.github.com/articles/changing-a-commit-message/)

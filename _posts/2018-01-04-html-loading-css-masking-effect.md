@@ -5,6 +5,15 @@ date: 2018-01-04 06:36
 comments: true
 categories: JS
 tags: CSS JS
+reference:
+  name:
+    - Javascript fadein fadeout
+    - 使用CSS 做LOADING動作
+    - loading 的 svg
+  link:
+    - https://stackoverflow.com/questions/6121203/how-to-do-fade-in-and-fade-out-with-javascript-and-css
+    - http://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html
+    - https://loading.io/
 ---
 首先建立HTML
 ```HTML
@@ -117,10 +126,3 @@ function shadein() {
   }, 10);
 };
 ```
-{% capture string_with_newlines %}
-來源:
-[Javascript fadein fadeout](https://stackoverflow.com/questions/6121203/how-to-do-fade-in-and-fade-out-with-javascript-and-css)
-[使用CSS 做LOADING動作](http://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html)
-[loading 的 svg](https://loading.io/)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

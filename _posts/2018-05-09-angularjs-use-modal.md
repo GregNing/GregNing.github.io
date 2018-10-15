@@ -6,6 +6,11 @@ comments: true
 categories: Angularjs
 description: 'Angularjs use modal settings(使用 Angularjs 設定 Bootstrap視窗)'
 tags: Angularjs
+reference:
+  name:
+    - angular close modal doing things
+  link:
+    - https://stackoverflow.com/questions/30356844/angularjs-bootstrap-modal-closing-call-when-clicking-outside-esc
 ---
 `<%= t('message')%>` 是用I18n轉換而來
 ```erb
@@ -53,6 +58,5 @@ $rootScope.submitConfirm = function () {
 {% capture string_with_newlines %}
 `dismiss` : 單純的關閉不需要觸發任何的callback可以使用這個。
 `close` : 關閉且觸發所需的callback可以使用這個。
-[angular close modal doing things](https://stackoverflow.com/questions/30356844/angularjs-bootstrap-modal-closing-call-when-clicking-outside-esc)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}

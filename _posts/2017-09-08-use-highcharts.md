@@ -5,6 +5,19 @@ date: 2017-09-08 17:26
 comments: true
 categories: Hihcharts
 tags: Highcharts MVC Csharp Jquery
+reference:
+  name:
+    - how-to-set-dynamic-data-in-highcharts
+    - changeXname
+    - Highcharts 增進performance
+    - highchart-options-dynamically
+    - 會顯示在折線圖上面呈現的樣式
+  link:
+    - https://stackoverflow.com/questions/11775385/how-to-set-dynamic-data-in-highcharts
+    - https://stackoverflow.com/questions/14409821/highcharts-update-the-series-name-label-dynamically
+    - https://stackoverflow.com/questions/18977112/best-performance-for-updating-many-highcharts-instances-on-demand
+    - https://stackoverflow.com/questions/17316856/is-there-a-way-to-set-highchart-options-dynamically
+    - https://stackoverflow.com/questions/13479476/change-highcharts-tooltip-formatter-from-chart-object-after-chart-is-rendered
 ---
 
 ##### 先設定折線圖所需要元件
@@ -92,8 +105,6 @@ ser.hide();
 });
 ```
 ##### 新增X軸名稱 以及 新增資料通(筆)數，data請以int array方式去做帶入
-可以參考不同的方法[how-to-set-dynamic-data-in-highcharts](https://stackoverflow.com/questions/11775385/how-to-set-dynamic-data-in-highcharts)<br>
-改變x軸的名稱[changeXname](https://stackoverflow.com/questions/14409821/highcharts-update-the-series-name-label-dynamically)
 ##### 設定 顏色不重複
 ```js
 function randomNewcolor() {
@@ -130,7 +141,7 @@ function randomNewcolor() {
 ```js
 if (i !== 0) {hart.series[i].hide();}}
 ```
-##### [增進performance](https://stackoverflow.com/questions/18977112/best-performance-for-updating-many-highcharts-instances-on-demand)
+
 ```js
 chart: {
   //將animation關閉會增進performancer
@@ -154,8 +165,7 @@ plotOptions:{
   }
 }
 ```
-##### 如果要自行設計x軸上方所顯示數據請使用以下範例
-[自行設計x軸上方所顯示數據](https://stackoverflow.com/questions/17316856/is-there-a-way-to-set-highchart-options-dynamically)
+##### 動態自訂x軸上方所顯示數據
 ```js
 let v;
 for (let i = 0; i < listmodel.length; i++) {
@@ -177,7 +187,7 @@ for (let i = 0; i < listmodel.length; i++) {
   });
 }
 ```
-##### [會顯示在折線圖上面呈現的樣式](https://stackoverflow.com/questions/13479476/change-highcharts-tooltip-formatter-from-chart-object-after-chart-is-rendered)
+
 ##### 新增tooltip的相關資訊
 ```js
 chart.tooltip.options.formatter = function () {

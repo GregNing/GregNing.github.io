@@ -6,7 +6,15 @@ comments: true
 categories: Terminal
 description: '更新ZSH'
 tags: Terminal
+reference:
+  name:
+    - oh-my-zsh-issues
+    - updatezsh
+  link:
+    - https://github.com/robbyrussell/oh-my-zsh/issues/1984
+    - https://stackoverflow.com/questions/17648621/how-do-i-update-zsh-to-the-latest-version
 ---
+
 # check the zsh info
 更新`ZSH`
 ```c
@@ -20,7 +28,6 @@ error: cannot pull with rebase: You have unstaged changes.
 error: please commit or stash them.
 There was an error updating. Try again later?
 ```
-[oh-my-zsh-issues](https://github.com/robbyrussell/oh-my-zsh/issues/1984)
 請使用以下這行進行修補
 ```c
   cd "$ZSH" && git stash && upgrade_oh_my_zsh
@@ -32,4 +39,3 @@ add the following line into the very end of the file(/etc/shells)
 `/usr/local/bin/zsh`
 # change default shell
 `chsh -s /usr/local/bin/zsh`
-[updatezsh](https://stackoverflow.com/questions/17648621/how-do-i-update-zsh-to-the-latest-version)

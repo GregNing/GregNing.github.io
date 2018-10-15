@@ -6,9 +6,15 @@ comments: true
 categories: Ruby-On-Rails
 description: 'Ruby 使用寄信Email-HTML CSS樣式的gem'
 tags: Gem Rails Ruby
+reference:
+  name:
+    - letter_opener
+    - premailer-rails
+  link:
+    - https://github.com/ryanb/letter_opener
+    - https://github.com/fphilipe/premailer-rails
 ---
-[letter_opener](https://github.com/ryanb/letter_opener)<br>
-[premailer-rails](https://github.com/fphilipe/premailer-rails)<br>
+
 請先在Gemfile安裝
 ```rb
 gem 'letter_opener'

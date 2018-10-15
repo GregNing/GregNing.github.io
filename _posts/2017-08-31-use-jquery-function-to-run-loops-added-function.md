@@ -5,6 +5,15 @@ date: 2017-08-31 11:29
 comments: true
 categories: Jquery
 tags: Jquery
+reference:
+  name:
+    - Javascript-creating-functions-in-a-for-loop
+    - Javascript-closure-inside-loops-simple-practical-example
+    - ES6-in-depth-let-and-const
+  link:
+    - https://stackoverflow.com/questions/19696015/javascript-creating-functions-in-a-for-loop
+    - https://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
+    - https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/
 ---
 可使用 這隻迴圈function 製造迴圈新增function
 ```js
@@ -33,9 +42,3 @@ for (let i = 0; i < datanumber.length; ++i) {
   });
 };
 ```
-{% capture string_with_newlines %}
-[javascript-creating-functions-in-a-for-loop](https://stackoverflow.com/questions/19696015/javascript-creating-functions-in-a-for-loop)
-[javascript-closure-inside-loops-simple-practical-example](https://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example)
-[es6-in-depth-let-and-const](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

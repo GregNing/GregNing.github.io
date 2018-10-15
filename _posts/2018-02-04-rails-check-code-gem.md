@@ -6,6 +6,11 @@ comments: true
 categories: Ruby-On-Rails
 description: 'rails check code gem'
 tags: Rails
+reference:
+  name:
+    - brakeman
+  link:
+    - https://github.com/presidentbeef/brakeman
 ---
 使用[brakeman](https://github.com/presidentbeef/brakeman)可以分析代碼找出有漏洞的地方
 首先在Gemfile安裝

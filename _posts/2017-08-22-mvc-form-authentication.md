@@ -5,10 +5,14 @@ date: 2017-08-22 09:42
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - Forms Authentication
+    - Explain-Forms-Authentication
+  link:
+    - http://msdn2.microsoft.com/en-us/library/aa480476.aspx
+    - https://blog.miniasp.com/post/2008/02/20/Explain-Forms-Authentication-in-ASPNET-20.aspx
 ---
-
-[Forms Authentication](http://msdn2.microsoft.com/en-us/library/aa480476.aspx)<br>
-看完這篇就幾乎全懂了！
 
 要讓會員登入成「已驗證」狀態的話，可以透過 FormsAuthentication 類別中的一個 RedirectFromLoginPage 靜態方法，而最簡單的一段程式碼就是這樣：
 ```cs
@@ -69,4 +73,3 @@ version.Text = ticket.Version.ToString();
 ```cs
 FormsAuthentication.SignOut();
 ```
-[FormsAuthentication](https://blog.miniasp.com/post/2008/02/20/Explain-Forms-Authentication-in-ASPNET-20.aspx)

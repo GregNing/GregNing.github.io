@@ -5,6 +5,19 @@ date: 2017-10-02 08:50
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - config membership
+    - FormsAuthenticationTicket
+    - FormsAuthentication.RedirectFromLoginPage
+    - FormsAuthentication
+    - 保哥FormAuthentication
+  link:
+    - https://dotblogs.com.tw/02047788a/2009/01/27/6950
+    - http://www.primaryobjects.com/2012/12/07/mvc-forms-authentication-and-storing-data-in-the-cookie/
+    - http://blog.xuite.net/jen999999/blog/124905607-C%23+webform+FormsAuthentication.RedirectFromLoginPage%E5%B0%8E%E9%A0%81%E9%9D%A2%E7%9A%84%E6%96%B9%E5%BC%8F
+    - https://msdn.microsoft.com/en-us/library/aa480476.aspx
+    - https://blog.miniasp.com/post/2008/02/20/Explain-Forms-Authentication-in-ASPNET-20.aspx
 ---
 #### 雖然都是程式碼但請實作一次。
 首先建立Model
@@ -235,11 +248,3 @@ Ex:
 [Authorize]
 public class SettingsController : Controller
 ```
-{% capture string_with_newlines %}
-[config membership](https://dotblogs.com.tw/02047788a/2009/01/27/6950)
-[FormsAuthenticationTicket](http://www.primaryobjects.com/2012/12/07/mvc-forms-authentication-and-storing-data-in-the-cookie/)
-[FormsAuthentication.RedirectFromLoginPage](http://blog.xuite.net/jen999999/blog/124905607-C%23+webform+FormsAuthentication.RedirectFromLoginPage%E5%B0%8E%E9%A0%81%E9%9D%A2%E7%9A%84%E6%96%B9%E5%BC%8F)
-[FormsAuthentication](https://msdn.microsoft.com/en-us/library/aa480476.aspx)
-[保哥FormAuthentication](https://blog.miniasp.com/post/2008/02/20/Explain-Forms-Authentication-in-ASPNET-20.aspx)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

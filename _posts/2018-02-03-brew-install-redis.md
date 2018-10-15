@@ -6,6 +6,7 @@ comments: true
 categories: Redis
 tags: Redis
 ---
+
 使用[redis-rb](https://github.com/redis/redis-rb) 數據庫gem
 請先在本機安裝無法透過Gemfile安裝
 ```rb
@@ -56,4 +57,4 @@ authenticate :user, lambda { |u| u.is_admin? } do
   mount Sidekiq::Web => '/sidekiq'
 end
 ```
-瀏覽網址 `http://localhost:3000/sidekiq`
+瀏覽網址`http://localhost:3000/sidekiq`

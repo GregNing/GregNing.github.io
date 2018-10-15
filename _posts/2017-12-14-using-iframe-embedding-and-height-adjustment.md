@@ -5,6 +5,13 @@ date: 2017-12-14 08:36
 comments: true
 categories: iframe
 tags: iframe
+reference:
+  name:
+    - 隨螢幕解析度調整高度寬度
+    - 隨您的內容調整高度以及寬度
+  link:
+    - https://stackoverflow.com/questions/3306124/how-to-make-a-html-iframe-100-width-and-height
+    - http://17joweb.com/blog/13-know-how-notes/237-iframe
 ---
 {% capture string_with_newlines %}
 `height="100%"`: 稍後會提到如何控制自動微調高度 控制框架高度。
@@ -23,6 +30,3 @@ tags: iframe
 `this.width=screen.width;this.height=screen.height;`<br>
 隨內容調整高度寬度<br>
 `parent.document.getElementById("mainframe").height=document.body.scrollHeight`
-
-[隨螢幕解析度調整高度寬度](https://stackoverflow.com/questions/3306124/how-to-make-a-html-iframe-100-width-and-height)<br>
-[隨您的內容調整高度以及寬度](http://17joweb.com/blog/13-know-how-notes/237-iframe)

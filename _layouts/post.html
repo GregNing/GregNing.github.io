@@ -21,6 +21,19 @@ comments: true
   </header>
   <div class="article-info">
     {{ content }}
+    {% if page.reference %}
+      <div class="article-reference">
+        <h2>參考資源</h2>
+        <ul>
+            {% assign links = page.reference.name.size | minus:1 %}
+              {% for i in(0..links) %}
+              <li>
+                <a href="{{ page.reference.link[i] }}">{{ page.reference.name[i] }}</a>
+              </li>
+              {% endfor %}
+        </ul>
+      </div>
+  {% endif %}
   </div>
 </div>
 <div class="related">

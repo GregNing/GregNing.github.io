@@ -5,6 +5,39 @@ date: 2017-10-15 08:44
 comments: true
 categories: Hangfire
 tags: MVC Hangfire Csharp
+reference:
+  name:
+    - hangfire install
+    - IIS Application Initialization
+    - Settings IIS AlwaysRunning
+    - Application-Initialization-for-keeping
+    - pp-always-running
+    - auto-start
+    - always-running
+    - Cron 時間計算
+    - Cron 詳細解說
+    - HangfireIO Owin
+    - HangfireIO using-dashboard
+    - Hangfire-aspnet-mvc-webapi
+    - rainmaker
+    - Hangfire Configuring
+    - Hangfire Performing
+  link:
+    - http://docs.hangfire.io/en/latest/installation.html
+    - https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-application-initialization
+    - https://www.red-gate.com/simple-talk/blogs/speeding-up-your-application-with-the-iis-auto-start-feature/
+    - https://weblog.west-wind.com/posts/2013/Oct/02/Use-IIS-Application-Initialization-for-keeping-ASPNET-Apps-alive
+    - http://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html
+    - https://www.red-gate.com/simple-talk/blogs/speeding-up-your-application-with-the-iis-auto-start-feature/
+    - http://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html)
+    - https://cronexpressiondescriptor.azurewebsites.net/?expression=0+15+10+*+*+%3F&locale=zh-CN
+    - https://en.wikipedia.org/wiki/Cron
+    - https://github.com/HangfireIO/Hangfire/issues/613
+    - http://docs.hangfire.io/en/latest/configuration/using-dashboard.html
+    - http://blog.kkbruce.net/2015/09/hangfire-aspnet-mvc-webapi.html#.WeMjT2iCxPa
+    - https://dotblogs.com.tw/rainmaker/2015/08/19/153169
+    - http://docs.hangfire.io/en/latest/background-processing/configuring-degree-of-parallelism.html
+    - http://docs.hangfire.io/en/latest/background-methods/performing-recurrent-tasks.html
 ---
 所使用的是 Hangfire 強大排程器有 UI介面可以使用。<br>
 首先安裝`PM> Install-Package Hangfire`
@@ -16,12 +49,6 @@ tags: MVC Hangfire Csharp
 請在你的IIS 應用程式集區找到您所使用的站台接下來點選 =>
 進階設定找到啟動模式(Start Mode) 改成 AlwaysRunning模式。
 也要把站台的進階設定，預先載入已啟動，改為True否則AlwaysRunning會沒有效果的。
-安裝: [Application Initialization](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-application-initialization)
-[Settings IIS AlwaysRunning](https://www.red-gate.com/simple-talk/blogs/speeding-up-your-application-with-the-iis-auto-start-feature/)
-[Application-Initialization-for-keeping](https://weblog.west-wind.com/posts/2013/Oct/02/Use-IIS-Application-Initialization-for-keeping-ASPNET-Apps-alive)
-[pp-always-running](http://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html)
-[auto-start](https://www.red-gate.com/simple-talk/blogs/speeding-up-your-application-with-the-iis-auto-start-feature/)
-[always-running](http://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
 接下來要在程式設定 IIS站台永遠執行模式
@@ -204,15 +231,3 @@ public class HangfireDashBoardAuthorizationFilter : IDashboardAuthorizationFilte
   }
 }
 ```
-{% capture string_with_newlines %}
-[參考1 Owin](https://github.com/HangfireIO/Hangfire/issues/613)
-[參考2 Owin](http://docs.hangfire.io/en/latest/configuration/using-dashboard.html)
-[aspnet-app-always-running](http://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html)
-[hangfire-aspnet-mvc-webapi](http://blog.kkbruce.net/2015/09/hangfire-aspnet-mvc-webapi.html#.WeMjT2iCxPa)
-[rainmaker](https://dotblogs.com.tw/rainmaker/2015/08/19/153169)
-[aspnet-app-always-running](http://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html)
-[hangfireconfiguring](http://docs.hangfire.io/en/latest/background-processing/configuring-degree-of-parallelism.html)
-[hangfireperforming](http://docs.hangfire.io/en/latest/background-methods/performing-recurrent-tasks.html)
-[hangfireusing-dashboard](http://docs.hangfire.io/en/latest/configuration/using-dashboard.html)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

@@ -7,7 +7,8 @@ categories: Ruby-On-Rails
 description: 'Rails select_tag 介紹以及使用ajax方式不使用remote: true'
 tags: Rails
 ---
-我們不用 [simple_form](https://github.com/plataformatec/simple_form) 表單去做處理而是使用原始Rails所用的select_tag。<br>
+
+我們不用[simple_form](https://github.com/plataformatec/simple_form)表單去做處理而是使用原始Rails所用的select_tag。<br>
 使用[url_for](https://apidock.com/rails/ActionView/RoutingUrlFor/url_for)
 ```erb
 <%= url_for(action: 'find', controller: 'books') %>

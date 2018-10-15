@@ -5,6 +5,11 @@ date: 2018-07-11 00:16
 comments: true
 categories: ssh
 tags: ssh
+reference:
+  name:
+    - SSH登入
+  link:
+    - http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
 ---
 {% capture string_with_newlines %}
 如果我們要使用 `ssh` 去做連線登入動作請使用以下指令
@@ -33,4 +38,3 @@ ssh 默認端口是 22 也就是登入的請求會被送到 22 這接口
 PubkeyAuthentication yes
 AuthorizedKeysFile .ssh/authorized_keys
 ```
-[ssh登入](http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html)

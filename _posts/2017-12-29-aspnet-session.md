@@ -5,7 +5,23 @@ date: 2017-12-29 03:14
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - Session特性與在Web.config的常用設定
+    - ASP.NET Session State Overview
+    - sessionState的三種屬性
+    - Session莫名遺失的解決辦法
+    - Session-State Modes
+    - 工作階段狀態模式
+  link:
+    - https://dotblogs.com.tw/darren.net/2009/02/05/7043
+    - https://msdn.microsoft.com/en-us/library/ms178581.aspx
+    - https://dotblogs.com.tw/may05005/2016/03/01/162511
+    - http://nelman.pixnet.net/blog/post/22127633-session%E8%8E%AB%E5%90%8D%E9%81%BA%E5%A4%B1%E7%9A%84%E8%A7%A3%E6%B1%BA%E8%BE%A6%E6%B3%95
+    - https://msdn.microsoft.com/en-us/library/ms178586.aspx
+    - https://msdn.microsoft.com/zh-tw/library/ms178586(v=vs.100).aspx
 ---
+
 從web.config 設定 Session 相關資訊<br>
 `Forms Authentication Timeout`（表單身份驗證超時）值設置身份驗證Cookie設置為有效的時間（以分鐘為單位），cookie將過期，用戶將不再進行身份驗證 - 它們將被重定向到登錄頁面自動。<br>
 `slidingExpiration = true`的值基本上是說在每個請求完成後，定時器被重置，只要用戶在超時值內發出請求，它們將繼續被認證。
@@ -51,9 +67,3 @@ sessionState 設定 必須有的屬性
   </authentication>
 </system.web>
 ```
-[參考1](https://dotblogs.com.tw/darren.net/2009/02/05/7043)
-[參考2](https://msdn.microsoft.com/en-us/library/ms178581.aspx)
-[參考3](https://dotblogs.com.tw/may05005/2016/03/01/162511)
-[參考4](http://nelman.pixnet.net/blog/post/22127633-session%E8%8E%AB%E5%90%8D%E9%81%BA%E5%A4%B1%E7%9A%84%E8%A7%A3%E6%B1%BA%E8%BE%A6%E6%B3%95)
-[參考5](https://msdn.microsoft.com/en-us/library/ms178586.aspx)
-[參考6](https://msdn.microsoft.com/zh-tw/library/ms178586(v=vs.100).aspx)

@@ -5,9 +5,14 @@ date: 2018-02-02 04:17
 comments: true
 categories: Ruby-On-Rails
 tags: Gem Ruby
+reference:
+  name:
+    - ranked-model
+  link:
+    - https://github.com/mixonic/ranked-model
 ---
-在這介紹[ranked-model](https://github.com/mixonic/ranked-model)
-使用Gemfile安裝
+
+在這介紹[ranked-model](https://github.com/mixonic/ranked-model)使用Gemfile安裝
 ```rb
 gem 'ranked-model'
 ```

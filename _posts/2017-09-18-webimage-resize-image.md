@@ -5,6 +5,11 @@ date: 2017-09-18 15:42
 comments: true
 categories: WebImage
 tags: WebImage Csharp
+reference:
+  name:
+    - webimage-crop-to-square
+  link:
+    - https://stackoverflow.com/questions/4535193/webimage-crop-to-square
 ---
 ```cs
 private static void CropImage (HttpPostedFileBase sourceImage) {
@@ -23,7 +28,6 @@ private static void CropImage (HttpPostedFileBase sourceImage) {
 newImage.GetBytes();
 }
 ```
-[webimage-crop-to-square](https://stackoverflow.com/questions/4535193/webimage-crop-to-square)
 ```cs
 HttpPostedFileBase myFile = Request.Files[0];
 WebImage img = new WebImage(myFile.InputStream);

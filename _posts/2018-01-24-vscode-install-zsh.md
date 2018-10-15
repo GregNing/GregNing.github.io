@@ -5,8 +5,17 @@ date: 2018-01-24 14:34
 comments: true
 categories: VsCode
 tags: VsCode
+reference:
+  name:
+    - ZSH
+    - ZSH Theme
+    - visual-studio-code-zsh
+  link:
+    - https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
+    - https://github.com/robbyrussell/oh-my-zsh
+    - https://www.jazz321254.com/visual-studio-code-zsh/
 ---
-安裝[ZSH]( https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+安裝[ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 我所使用的是macOS，輸入以下安裝
 ```
 brew install zsh zsh-completions
@@ -47,4 +56,3 @@ source ~/.zshrc
 ```
 exit重開 VScode
 開啟 VSCode 要進入 ZSH畫面輸入`zsh`指令就會看到畫面變了
-[參考](https://www.jazz321254.com/visual-studio-code-zsh/)

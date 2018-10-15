@@ -5,6 +5,13 @@ date: 2017-12-11 03:33
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - jQuery File Upload Demo
+    - Jcrop
+  link:
+    - https://blueimp.github.io/jQuery-File-Upload/
+    - http://jsgears.com/thread-173-1-1.html
 ---
 上傳檔案[jQuery File Upload Demo](https://blueimp.github.io/jQuery-File-Upload/)<br>
 裁切圖片[jQuery Jcrop](http://jsgears.com/thread-173-1-1.html)

@@ -5,6 +5,11 @@ date: 2017-08-22 04:03
 comments: true
 categories: CSS
 tags: CSS
+reference:
+  name:
+    - Radio Button Style
+  link:
+    - https://codepen.io/anon/pen/yojgKo
 ---
 
 Radio Butto Style 在此紀錄下style樣式
@@ -114,4 +119,3 @@ input[type=radio]:checked ~ label {
   color: #156168;
 }
 ```
-[Radio Button Style](https://codepen.io/anon/pen/yojgKo)

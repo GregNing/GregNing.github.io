@@ -5,6 +5,11 @@ date: 2017-08-21 16:52
 comments: true
 categories: Jquery
 tags: Jquery
+reference:
+  name:
+    - Use radio button
+  link:
+    - http://www.cnblogs.com/xlfj521/archive/2008/01/29/1057375.html
 ---
 
 ##### Get Radio Button Value with Javascript
@@ -47,4 +52,3 @@ $("#sel").attr("value",'-sel3');//設置value=-sel3的項目為當前選中項
 $("1111").appendTo("#sel");//添加下拉框的option
 $("#sel").empty()；//清空下拉框
 ```
-[use radio button](http://www.cnblogs.com/xlfj521/archive/2008/01/29/1057375.html)

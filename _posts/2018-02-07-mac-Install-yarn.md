@@ -5,8 +5,13 @@ date: 2018-02-07 09:34
 comments: true
 categories: Yarn
 tags: Yarn
+reference:
+  name:
+    - yarn
+  link:
+    - https://yarnpkg.com/lang/en/docs/install/
 ---
-如果已經裝好Homebrew要在安裝 [yarn](https://yarnpkg.com/lang/en/docs/install/)請按照以下方式即可
+如果已經裝好Homebrew要在安裝[yarn](https://yarnpkg.com/lang/en/docs/install/)請按照以下方式即可
 ```
 brew install yarn
 ```

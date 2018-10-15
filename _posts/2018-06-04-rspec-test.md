@@ -6,6 +6,15 @@ date: 2018-06-04 15:30
 comments: true
 categories: Rspec
 tags: Rspec
+reference:
+  name:
+    - Rspec Class
+    - RSPEC 參考
+    - Mock
+  link:
+    - https://relishapp.com/rspec/rspec-mocks/docs/verifying-doubles/using-a-class-double
+    - https://mgleon08.github.io/blog/2016/01/29/rspec-plus-factory-girl/
+    - https://ihower.tw/rails/files/ihower-rspec-mock.pdf
 ---
 Mock和stub都屬於Test double，模擬測試前者是模擬特定對象測試行為後者為方法。
 可以使用gem安裝[gem rspec-mocks](https://github.com/rspec/rspec-mocks)
@@ -118,12 +127,5 @@ end
 `bunde exec rspec filename.rb -fd` 輸出 specdoc ⽂件
 `bunde exec rspec filename.rb -fh` 輸出 html ⽂件
 
-[Rspec Class](https://relishapp.com/rspec/rspec-mocks/docs/verifying-doubles/using-a-class-double)
-[RSPEC參考](https://mgleon08.github.io/blog/2016/01/29/rspec-plus-factory-girl/)
-[Mock](https://ihower.tw/rails/files/ihower-rspec-mock.pdf)
-[ihower 文件](https://ihower.tw/rails/files/ihower-rspec.pdf)
-[ihower rspec講解](https://ihower.tw/rails/testing.html)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}
-
-{% include post_tag.html %}

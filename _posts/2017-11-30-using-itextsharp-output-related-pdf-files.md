@@ -5,6 +5,13 @@ date: 2017-11-30 01:47
 comments: true
 categories: MVC
 tags: MVC Csharp
+reference:
+  name:
+    - itextpdf
+    - why-doesnt-fontfactory-getfontknown-font-name-floatsize-work
+  link:
+    - https://developers.itextpdf.com/fr/node/1798
+    - https://stackoverflow.com/questions/24007492/why-doesnt-fontfactory-getfontknown-font-name-floatsize-work
 ---
 請先自行使用Nutget安裝 iTextsharp
 以下範例是在圖片上加上文字 產出PDF檔案此篇是利用絕對位置在圖片上加上字元
@@ -191,5 +198,3 @@ using (MemoryStream mstream = new MemoryStream())
   }
 }
 ```
-[itextpdf](https://developers.itextpdf.com/fr/node/1798)
-[why-doesnt-fontfactory-getfontknown-font-name-floatsize-work](https://stackoverflow.com/questions/24007492/why-doesnt-fontfactory-getfontknown-font-name-floatsize-work)

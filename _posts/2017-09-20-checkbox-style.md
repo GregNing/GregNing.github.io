@@ -5,6 +5,13 @@ date: 2017-09-20 09:26
 comments: true
 categories: CSS
 tags: CSS
+reference:
+  name:
+    - checkbox codepen style
+    - style-checkboxes-with-css
+  link:
+    - https://codepen.io/bbodine1/pen/novBm
+    - https://paulund.co.uk/style-checkboxes-with-css
 ---
 ##### 我選用的是squaredFour
 ```HTML
@@ -61,5 +68,3 @@ tags: CSS
   opacity: 0.5;
 }
 ```
-因他是選用scss去做開發但我使用css去做調整[checkbox codepen style](https://codepen.io/bbodine1/pen/novBm)。<br>
-另外一種[style-checkboxes-with-css](https://paulund.co.uk/style-checkboxes-with-css)可以參考看看

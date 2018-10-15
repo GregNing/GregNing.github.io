@@ -6,6 +6,13 @@ comments: true
 categories: Heroku
 description: ROR專案上傳到Heroku
 tags: Heroku Ruby Git
+reference:
+  name:
+    - New SSH key
+    - heroku install
+  link:
+    - https://github.com/settings/ssh
+    - https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 ---
 
 使用Rails建立`rails new app_Name`專案進入專案之後請輸入`bundle`讓專案跑一次等於是重建的效果。

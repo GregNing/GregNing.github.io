@@ -356,7 +356,7 @@
     .article-inner {
       border: 1px solid #c5c5c5;
       border-radius: 5px;
-      padding: 2em 2em;
+      padding: 2em 2em 0 2em;
       overflow: hidden;
 
       @media(max-width: 820px) {
@@ -431,6 +431,26 @@
 
           &:hover {
             color: #333;
+          }
+        }
+
+        .article-reference {
+          h2 {
+            color: #585757;
+          }
+
+          li {
+            margin: 5px 0;
+
+            a {
+              color: #595959;
+              font-size: 16px;
+              font-weight: 400;
+
+              &:hover {
+                color: #212121;
+              }
+            }
           }
         }
       }

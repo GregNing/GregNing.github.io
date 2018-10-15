@@ -5,6 +5,17 @@ date: 2017-08-30 04:25
 comments: true
 categories: MVC
 tags: Csharp MVC
+reference:
+  name:
+    - reload-antiforgerytoken-after-a-login
+    - MVC5-antiforgerytoken-how-to-handle-the-provided-anti-forgery-token-was-meant
+    - anti-forgery-token-is-meant-for-user-but-the-current-user-is-username
+    - mvc-csrf-ajax-antiforgerytoken
+  link:
+    - https://stackoverflow.com/questions/16815634/reload-antiforgerytoken-after-a-login
+    - https://stackoverflow.com/questions/32653049/mvc5-antiforgerytoken-how-to-handle-the-provided-anti-forgery-token-was-meant
+    - https://stackoverflow.com/questions/14970102/anti-forgery-token-is-meant-for-user-but-the-current-user-is-username
+    - http://kevintsengtw.blogspot.tw/2013/09/aspnet-mvc-csrf-ajax-antiforgerytoken.html
 ---
 ##### 新增CommonRazorFunctions.cshtml
 ```cs
@@ -115,11 +126,3 @@ private void getJSONValidateResult(ActionExecutingContext filterContext)
 AntiForgeryToken - how to handle “The provided anti-forgery token was meant for user ”“, but the current user is ”xxx“.” exception?
 ```
 類似這種問題
-{% capture string_with_newlines %}
-參考:
-[reload-antiforgerytoken-after-a-login](https://stackoverflow.com/questions/16815634/reload-antiforgerytoken-after-a-login)
-[mvc5-antiforgerytoken-how-to-handle-the-provided-anti-forgery-token-was-meant](https://stackoverflow.com/questions/32653049/mvc5-antiforgerytoken-how-to-handle-the-provided-anti-forgery-token-was-meant)
-[anti-forgery-token-is-meant-for-user-but-the-current-user-is-username](https://stackoverflow.com/questions/14970102/anti-forgery-token-is-meant-for-user-but-the-current-user-is-username)
-[anti-forgery-token-is-meant-for-user-but-the-current-user-is-username](http://kevintsengtw.blogspot.tw/2013/09/aspnet-mvc-csrf-ajax-antiforgerytoken.html)
-{% endcapture %}
-{{ string_with_newlines | newline_to_br }}

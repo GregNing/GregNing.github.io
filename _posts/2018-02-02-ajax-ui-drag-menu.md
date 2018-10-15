@@ -5,6 +5,13 @@ date: 2018-02-02 05:03
 comments: true
 categories: Ruby-On-Rails
 tags: Rails
+reference:
+  name:
+    - Sortable Plugin
+    - jquery-ui-rails
+  link:
+    - http://api.jqueryui.com/sortable/
+    - https://github.com/jquery-ui-rails/jquery-ui-rails
 ---
 使用Jquery元件 拖拉移動[Sortable Plugin](http://api.jqueryui.com/sortable/)
 安裝[jquery-ui-rails](https://github.com/jquery-ui-rails/jquery-ui-rails)

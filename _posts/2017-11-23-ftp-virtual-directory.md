@@ -5,6 +5,11 @@ date: 2017-11-23 02:09
 comments: true
 categories: FTP
 tags: FTP IIS
+reference:
+  name:
+    - Microsoft FTP 7.5 使用者隔離 操作教學
+  link:
+    - https://atifans.net/articles/microsoft-ftp-7-5-users-isolation/
 ---
 在FTP 建立虛擬目錄
 
@@ -17,5 +22,3 @@ Ex: FTP使用者是本機使用者(LocalUser)
 6. 在FTP站台選"使用者驗證"，開啟相對應的驗證方式，如果你是用本機帳戶，請開啟基本驗證
 7. 接著開放使用者存取FTP站台的權限
 8. 再來就是調整"最終目標資料夾"的存取權限
-
-[來源](https://atifans.net/articles/microsoft-ftp-7-5-users-isolation/)

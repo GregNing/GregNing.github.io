@@ -6,10 +6,22 @@ comments: true
 categories: Ruby-On-Rails
 description: '使用 mixin 以及 autoload_paths vs eager_load_paths解說'
 tags: Ruby
+reference:
+  name:
+    - autoload_paths vs eager_load_paths詳細說明
+    - Don't forget about eager_load when extending autoload paths
+    - autoload_paths or eager_load其他使用方式
+    - rails3中autoload_paths加載詳細說明
+    - helper-method-and-view-context解說
+  link:
+    - https://stackoverflow.com/questions/19773266/confusing-about-autoload-paths-vs-eager-load-paths-in-rails-4
+    - https://blog.arkency.com/2014/11/dont-forget-about-eager-load-when-extending-autoload/
+    - http://hakunin.com/rails3-load-paths
+    - http://www.mojidong.com/rails/2013/03/16/rails3-autoload_paths-principle/
+    - http://blog.xdite.net/posts/2014/06/16/helper-method-and-view-context
 ---
 > 先進行 mixin 範例<br>
 > 如果不想使用mixin請使用以下方式直接在Controller新增 Controller級的helper
-[helper-method-and-view-context解說](http://blog.xdite.net/posts/2014/06/16/helper-method-and-view-context).
 ```rb
 helper_method :current_cart
 def current_cart
@@ -102,9 +114,5 @@ config.eager_load_paths += %W(
 {% capture string_with_newlines %}
 上production因安全所需會自動取消autoload_paths，所以在此建議使用`eager_load_paths` 上production會比以較不會發生異常。
 總結：`autoload_paths`就是當使用某個常量（比如module class時），rails會調用const_missing，然後在`autoload_paths`的數組目錄中查找，找到該常量後加載使用。簡單認為，在使用時，才加載相關代碼。 優點：能夠快速啟動rails，在啟動rails時減少加載代碼，在使用時臨時加載進來。`eager_load_paths`在rails啟動時，就把`eager_load_paths`中的目錄代碼加載進來.production環境時建議使用，`eager_load_paths`加載。這樣雖然啟動的 時候速度會變慢，因為要加載更多代碼，但是，這樣加載預熱後，在用戶使用程序時，就能很快的調用到相關代碼，因為已經在啟動的時候加載好了。 關於lib目錄中的代碼文件根據實際情況需要，選擇加載方式。
-[autoload_paths vs eager_load_paths詳細說明](https://stackoverflow.com/questions/19773266/confusing-about-autoload-paths-vs-eager-load-paths-in-rails-4)
-[Don't forget about eager_load when extending autoload paths](https://blog.arkency.com/2014/11/dont-forget-about-eager-load-when-extending-autoload/)
-[autoload_paths or eager_load其他使用方式](http://hakunin.com/rails3-load-paths )
-[rails3中autoload_paths加載詳細說明](http://www.mojidong.com/rails/2013/03/16/rails3-autoload_paths-principle/)
 {% endcapture %}
 {{ string_with_newlines | newline_to_br }}

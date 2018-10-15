@@ -5,6 +5,11 @@ date: 2017-09-08 17:35
 comments: true
 categories: Jquery
 tags: Jquery
+reference:
+  name:
+    - Javascript creating function
+  link:
+    - https://stackoverflow.com/questions/19696015/javascript-creating-functions-in-a-for-loop
 ---
 
 ##### 以下是示範使用使用照片去觸發折線圖消失或顯示
@@ -28,4 +33,3 @@ for (let i = 0; i < UserIdlist.length; ++i) {
   });
 };
 ```
-[javascript creating function](https://stackoverflow.com/questions/19696015/javascript-creating-functions-in-a-for-loop)
