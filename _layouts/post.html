@@ -8,15 +8,16 @@ comments: true
   <header class="article-meta">
     <div class="article-date">
       <i class="fa fa-calendar"></i>
-      <time datetime="{{ page.date | date: %Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date_to_string }}</time>
+      <time datetime="{{ page.date | date_to_string: "ordinal", "US" }}" itemprop="datePublished">{{ page.date | date_to_string: "ordinal", "US" }}</time>
     </div>
     <div class="article-tags">
       <i class="fa fa-tags"></i> :
       {% for tag in page.tags %}
-        <a class="tag-wrapper" href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">
-          {{ tag }}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a class="tag-wrapper" href="/tag/{{ tag_name }}" title="View posts tagged with &quot;{{ tag_name }}&quot;">
+          {{ tag_name }}
         </a>
-        {% if forloop.last != true %} {% endif %} {% endfor %}
+      {% endfor %}
     </div>
   </header>
   <div class="article-info">

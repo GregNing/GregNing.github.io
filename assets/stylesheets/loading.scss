@@ -1,7 +1,7 @@
 .pjax_loading {
   display: none;
   z-index: 9999;
-  background-color: rgba(255,255,255,.65);
+  background-color: rgba(255, 255, 255, .65);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -38,32 +38,41 @@
       }
 
       &.spinner-sector-red {
-          animation: rotate 2.5s ease-in infinite;
-          border-top: 15px solid lightcoral;
+        animation: rotate 2.5s ease-in infinite;
+        border-top: 15px solid lightcoral;
       }
 
       &.spinner-sector-green {
-          animation: rotate 1.5s ease-in-out infinite;
-          border-top: 15px solid lightgreen;
+        animation: rotate 1.5s ease-in-out infinite;
+        border-top: 15px solid lightgreen;
       }
     }
   }
 }
 
 @keyframes rotate {
-    from { transform: rotate(0); }
-    to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes loading-opacity {
-    0%, 100% {
-        opacity: 1;
-    }
-    25%, 75% {
-        opacity: .5;
-    }
-    50% {
-        opacity: .1;
-    }
-}
 
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: .1;
+  }
+}
