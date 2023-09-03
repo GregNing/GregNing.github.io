@@ -13,10 +13,11 @@ comments: true
     <div class="article-tags">
       <i class="fa fa-tags"></i> :
       {% for tag in page.tags %}
-        <a class="tag-wrapper" href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">
-          {{ tag }}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a class="tag-wrapper" href="/tag/{{ tag_name }}" title="View posts tagged with &quot;{{ tag_name }}&quot;">
+          {{ tag_name }}
         </a>
-        {% if forloop.last != true %} {% endif %} {% endfor %}
+      {% endfor %}
     </div>
   </header>
   <div class="article-info">
