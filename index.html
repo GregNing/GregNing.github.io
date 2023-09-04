@@ -14,7 +14,7 @@ title: Home
     <div class="post-info">
       <div class="post-date">
         <i class="fa fa-calendar"></i>
-        <time datetime="{{ post.date | date:'%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <time datetime="{{ post.date | date:'%Y-%m-%d' }}" itemprop="datePublished">{{ post.date | date_to_string: "ordinal", "US" }}</time>
       </div>
       <div class="post-tags">
         <i class="fa fa-tags"></i> :
