@@ -762,3 +762,7 @@
     }
   }
 }
+
+img[src~="auto-width100"] {
+  width: 100%;
+}
