@@ -35,11 +35,20 @@ if [ -z "$BRANCHES_TO_SKIP" ]; then
   BRANCHES_TO_SKIP=(master staging develop)
 fi
 
+# Exit early if this is part of a rebase
+if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ]; then
+  echo "Skipping prepare-commit-msg hook during rebase"
+  exit 0
+fi
+
 # Get the currently checked-out branch name
 BRANCH_NAME=$(git branch | grep '*' | sed 's/* //')
 # will auto transfer branch name to special words
-# for example features/TN-102-get-cart => TN-102
-NEW_BRANCH_NAME=$(git branch | grep '*' | sed 's/* //' | grep -oE 'TN-[0-9]+')
+# Eamples of branch to prefix:
+#   JIRA-1234              -> JIRA-1234: <COMMIT_MSG>
+#   feature/JIRA-1234      -> JIRA-1234: <COMMIT_MSG>
+#   JIRA-1234_my_feature   -> JIRA-1234: <COMMIT_MSG>
+NEW_BRANCH_NAME=$(git branch | grep '*' | sed 's/* //' | grep -oE 'JIRA-[0-9]+')
 
 # Check if the MERGE_HEAD file is present
 if [ -f ".git/MERGE_HEAD" ]
