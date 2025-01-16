@@ -31,40 +31,51 @@ reference:
 ```sh
 #!/bin/sh
 
-if [ -z "$BRANCHES_TO_SKIP" ]; then
-  BRANCHES_TO_SKIP=(master staging develop)
-fi
+COMMIT_MSG_FILE=$1
 
-# Exit early if this is part of a rebase
+# Define branches to skip
+BRANCHES_TO_SKIP="master develop test"
+
+# Check if the hook is running during a rebase
 if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ]; then
   echo "Skipping prepare-commit-msg hook during rebase"
   exit 0
 fi
 
-# Get the currently checked-out branch name
-BRANCH_NAME=$(git branch | grep '*' | sed 's/* //')
+# Get the current branch name
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+
+# Exit if the current branch is in the skip list
+if echo "$BRANCHES_TO_SKIP" | grep -qw "$BRANCH_NAME"; then
+  echo "Skipping commit message formatting for branch: $BRANCH_NAME"
+  exit 0
+fi
+
 # will auto transfer branch name to special words
 # Eamples of branch to prefix:
 #   JIRA-1234              -> JIRA-1234: <COMMIT_MSG>
 #   feature/JIRA-1234      -> JIRA-1234: <COMMIT_MSG>
 #   JIRA-1234_my_feature   -> JIRA-1234: <COMMIT_MSG>
-NEW_BRANCH_NAME=$(git branch | grep '*' | sed 's/* //' | grep -oE 'JIRA-[0-9]+')
+TICKET=$(echo "$BRANCH_NAME" | grep -oE 'JIRA-[0-9]+')
 
-# Check if the MERGE_HEAD file is present
-if [ -f ".git/MERGE_HEAD" ]
-then
-    exit 0
+# Check for merge commit
+if [ -f ".git/MERGE_HEAD" ]; then
+  exit 0
 fi
 
-# Get the commit message, removing lines that start with a #
-MESSAGE=$(cat "$1" | sed '/^#.*/d')
-# Check if the commit message is non-empty
-if [ -n "$MESSAGE" ]
-then
-    # Add the branch name and the commit message
-    echo "$NEW_BRANCH_NAME: $MESSAGE" > "$1"
+# Get the commit message without comments
+MESSAGE=$(grep -v '^#' "$COMMIT_MSG_FILE" | sed '/^$/d')
+
+# Abort if the commit message is empty
+if [ -z "$MESSAGE" ]; then
+  echo "Aborting commit due to empty commit message."
+  exit 1
+fi
+
+# Prepend the ticket number or branch name to the commit message
+if [ -n "$TICKET" ]; then
+  echo "$TICKET: $MESSAGE" > "$COMMIT_MSG_FILE"
 else
-    echo "Aborting commit due to empty commit message."
-    exit 1
+  echo "$BRANCH_NAME: $MESSAGE" > "$COMMIT_MSG_FILE"
 fi
 ```
