@@ -1,20 +1,35 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!doctype html>
+<html lang="zh-Hant">
   {% include head.html %}
-  <body>
+  <body class="site-shell">
+    <a class="skip-link" href="#main-content">跳至主要內容</a>
     {% include menubar.html %}
-    <div class="content g-body">
-      <div class="container">
-        <div class="row">
-          {% include sidebar_left.html %}
-          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 box-shadow fadein-right sidebar-right">
-            <div class="page-content" id="pjax">
-              {{ content }}
-            </div>
-          </div>
-        </div>
+
+    <main id="main-content" class="site-main">
+      <div class="site-main__inner" id="pjax">
+        {{ content }}
       </div>
-    </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__label">GREG'S BLOG / ENGINEERING NOTES</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="{{ '/pages/about/' | relative_url }}">About <span>↗</span></a>
+          <a href="{{ '/atom.xml' | relative_url }}">RSS <span>↗</span></a>
+          <a href="{{ site.author.url }}" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+        </div>
+        <p class="site-footer__copyright">© {{ 'now' | date: '%Y' }} Greg Yang</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" data-scroll-top aria-label="回到頁面頂端">
+      <span>TOP</span>
+      <span aria-hidden="true">↑</span>
+    </button>
+
     <div class="pjax_loading">
       <div class="spinner">
         <div class="spinner-text">Loading</div>

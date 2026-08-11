@@ -14,6 +14,7 @@ reference:
   link:
     - https://stackoverflow.com/questions/4632408/understanding-source-option-of-has-one-has-many-through-of-rails
     - https://rails.ruby.tw/association_basics.html#has-many-through-%E9%97%9C%E8%81%AF
+    - https://www.creative-tim.com/product/material-kit
 ---
 如果要用於模型上關聯的名稱與through模型中的關聯不相同，則可以使用source來指定它。
 以下範例

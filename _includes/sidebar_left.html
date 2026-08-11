@@ -1,43 +1,24 @@
-<div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left sidebar-left">
-  <div class="profile">
-    <div class="profile-info">
-      <div class="profile-img">
-          <img src="{{ base.url | prepend: site.auth.url }}/public/profile_img.jpg">
-      </div>
-      <h2>Greg Yang</h2>
-      <h3>Developer</h3>
-      <span class="location">
-        <i class="fa fa-map-marker">
-          <span>Taipei, Taiwan</span>
-        </i>
-      </span>
+<aside class="profile-card">
+  <div class="profile-card__header">
+    <p class="eyebrow">AUTHOR / 001</p>
+    <div class="profile-card__image">
+      <img src="{{ '/public/profile_img.jpg' | relative_url }}" alt="Greg Yang">
     </div>
-    <div class="profile-integral">
-      <div class="posts-total-count">
-            {% for post in site.posts %}
-              {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
-            {% endfor %}
-            {{ post_count }}
-          <span>POSTS</span>
-      </div>
-        <div>
-          <span>
-            {% for post in site.tags %}
-              {% capture post_tags %} {{ post_tags | plus: 1 }} {% endcapture %}
-            {% endfor %}
-            {{ post_tags }}
-          </span>
-          <span>TAGS</span>
-        </div>
-    </div>
-    <div class="profile-link">
-      <ul>
-        <li>
-            <a href="{{ site.author.url }}" target="_blank" rel="noopener" title="Greg GitHub">
-                <i class="fa fa-github"></i>
-            </a>
-        </li>
-      </ul>
-    </div>
+    <h2>Greg Yang</h2>
+    <p class="profile-card__role">Developer <span>·</span> Taipei, Taiwan</p>
   </div>
-</div>
+
+  <p class="profile-card__bio">把 web development、backend system 與日常踩坑，整理成下次可以直接回來查的工程筆記。</p>
+
+  <div class="profile-card__stats" aria-label="網站統計">
+    <div><strong>{{ site.posts | size }}</strong><span>NOTES</span></div>
+    <div><strong>{{ site.tags | size }}</strong><span>TAGS</span></div>
+  </div>
+
+  <div class="profile-card__footer">
+    <a href="{{ '/pages/about/' | relative_url }}" class="pjaxlink">About <span>↗</span></a>
+    <a href="{{ site.author.url }}" target="_blank" rel="noopener" aria-label="前往 Greg 的 GitHub">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+  </div>
+</aside>

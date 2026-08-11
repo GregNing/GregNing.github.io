@@ -1,42 +1,39 @@
-<div class="menubar-container">
-  <div class="container">
-    <div class="row">
-      <div class="site-home">
-        <a href="/" title="前往Greg Blog首頁">
-          <span>Greg's Blog</span>
-        </a>
-      </div>
-      <nav role="navigation" class="navbar">
-        <div class="site-menu">
-          <ul>
-            <li>
-              <a class="pjaxlink" href="/" data-hover="Home">Home</a>
-            </li>
-            <li>
-              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/about" data-hover="About">About</a>
-            </li>
-            <li>
-              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/category" data-hover="Category">Category</a>
-            </li>
-            <li>
-              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/tag" data-hover="Tag Cloud">Tag
-                Cloud</a>
-            </li>
-            <li>
-              <a class="pjaxlink" href="{{ prepend: site.baseurl }}/pages/archive" data-hover="Archive">Archive</a>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="menubar-search-block">
-          <label class="menubar-search" title="Search Greg's Posts">
-            <span class="fa fa-search" aria-hidden="true"></span>
-            <input type="text" class="search-query st-default-search-input" placeholder="Search Posts"
-              autocomplete="off" autocorrect="off" autocapitalize="off">
-            <i class="fa fa-times"></i>
-          </label>
-        </div> -->
-    </div>
+<header class="site-header" data-site-header>
+  <div class="site-header__inner">
+    <a class="site-brand pjaxlink" href="{{ '/' | relative_url }}" title="前往 Greg's Blog 首頁">
+      <span class="site-brand__mark" aria-hidden="true">G/</span>
+      <span class="site-brand__copy">
+        <strong>Greg's Blog</strong>
+        <small>ENGINEERING NOTES / TAIPEI</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">
+      <span>Menu</span>
+      <span class="nav-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav id="site-navigation" class="site-nav" data-nav-menu aria-label="主要導覽">
+      <a class="site-nav__link pjaxlink{% if page.url == '/' or page.layout == 'post' %} is-current{% endif %}" href="{{ '/' | relative_url }}"{% if page.url == '/' or page.layout == 'post' %} aria-current="page"{% endif %}>
+        <span>01</span> Notes
+      </a>
+      <a class="site-nav__link pjaxlink{% if page.url contains '/pages/category' %} is-current{% endif %}" href="{{ '/pages/category/' | relative_url }}"{% if page.url contains '/pages/category' %} aria-current="page"{% endif %}>
+        <span>02</span> Topics
+      </a>
+      <a class="site-nav__link pjaxlink{% if page.url contains '/pages/tag' or page.layout == 'tag_index' %} is-current{% endif %}" href="{{ '/pages/tag/' | relative_url }}"{% if page.url contains '/pages/tag' or page.layout == 'tag_index' %} aria-current="page"{% endif %}>
+        <span>03</span> Tags
+      </a>
+      <a class="site-nav__link pjaxlink{% if page.url contains '/pages/archive' %} is-current{% endif %}" href="{{ '/pages/archive/' | relative_url }}"{% if page.url contains '/pages/archive' %} aria-current="page"{% endif %}>
+        <span>04</span> Archive
+      </a>
+      <a class="site-nav__link pjaxlink{% if page.url contains '/pages/about' %} is-current{% endif %}" href="{{ '/pages/about/' | relative_url }}"{% if page.url contains '/pages/about' %} aria-current="page"{% endif %}>
+        <span>05</span> About
+      </a>
     </nav>
+
+    <a class="site-header__github" href="{{ site.author.url }}" target="_blank" rel="noopener">
+      GitHub <span aria-hidden="true">↗</span>
+    </a>
   </div>
-</div>
-</div>
+  <div class="site-header__progress" aria-hidden="true"><span data-scroll-progress></span></div>
+</header>

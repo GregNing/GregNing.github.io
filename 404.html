@@ -4,7 +4,11 @@ title: "404: Page not found"
 permalink: /404.html
 ---
 
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
+<div class="section-page error-page">
+  <header class="section-page__header">
+    <p class="eyebrow">ERROR <span>/</span> 404</p>
+    <h1>這一頁走丟了。</h1>
+    <p class="section-page__intro">網址不存在，或這篇筆記已經搬家。回到首頁，從最新的工程筆記繼續。</p>
+    <a class="back-link" href="{{ '/' | relative_url }}">← Back to notes</a>
+  </header>
 </div>

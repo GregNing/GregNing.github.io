@@ -23,8 +23,8 @@ permalink: pretty
 
 # Setup
 title: Greg's Blog
-description: "Hello Welcome to Greg Blog!"
-url: https://github.com/GregNing
+description: "Greg 的工程筆記：整理 Rails、Ruby、JavaScript、資料庫與部署實作，讓下一次遇到同樣問題時可以快速回查。"
+url: https://gregning.github.io
 baseurl: /
 # Author
 author:

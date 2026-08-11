@@ -1,41 +1,32 @@
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2efe8">
+  <meta name="color-scheme" content="light">
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+
   {% feed_meta %}
-  <!-- SEO Search Engine Optimization -->
   {% seo %}
 
-  <link rel="stylesheet" type="text/css" href="{{ prepend: site.baseurl }}/assets/stylesheets/main.css">
+  <!-- Vendor styles stay before the site layer so older posts can keep using Bootstrap classes. -->
+  <link rel="stylesheet" href="{{ '/public/css/bootstrap.min.css' | relative_url }}" media="screen">
+  <link rel="stylesheet" href="{{ '/public/css/syntax.css' | relative_url }}" media="screen">
+  <link rel="stylesheet" href="{{ '/public/css/font-awesome/font-awesome.css' | relative_url }}" media="screen">
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}" media="screen">
 
-  <!-- CSS -->
-{% if site.custom_css %}
-  {% for stylesheet in site.custom_css %}
-    <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/{{ stylesheet }}.css" media="screen" type="text/css">
-  {% endfor %}
-{% endif %}
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/public/apple-touch-icon-144-precomposed.png' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="Greg's Blog RSS" href="{{ '/atom.xml' | relative_url }}">
 
-  <link rel="stylesheet" href="{{ prepend: site.baseurl }}/public/css/font-awesome/font-awesome.css" media="screen" type="text/css">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ prepend: site.baseurl }}public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="{{ prepend: site.baseurl }}/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  <!-- JS -->
   {% if site.plugin_js %}
     {% for javascript in site.plugin_js %}
-      <script src="{{ prepend: site.baseurl }}/assets/javascript/{{ javascript }}.js"></script>
+      <script defer src="{{ '/assets/javascript/' | append: javascript | append: '.js' | relative_url }}"></script>
     {% endfor %}
   {% endif %}
-  {% include analytics.html %}
 
-  {% if site.tags != "" %}
-    {% include tags.html %}
-  {% endif %}
+  {% include analytics.html %}
 </head>

@@ -1,23 +1,20 @@
 ---
 layout: page
-title: Tag
+title: Tags
+description: 用標籤快速切換技術主題，找到一組可以一起閱讀的筆記。
 ---
 
-{% capture temptags %}
-  {% for tag in site.tags %}
-    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
-  {% endfor %}
-{% endcapture %}
-
-<ul class="tag-search">
-{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
-{% for temptag in sortedtemptags %}
-  {% assign tagitems = temptag | split: '#' %}
-  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  <li>
-      <a href="/tag/{{ tagname }}">
-        {{ tagname }} ({{ tagitems[2] }})
+<div class="tag-directory">
+  <div class="directory-toolbar">
+    <span class="eyebrow">{{ site.tags | size }} TAGS</span>
+    <span class="directory-toolbar__hint">依文章數量排序</span>
+  </div>
+  <div class="tag-cloud">
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+      <a href="{{ '/tag/' | append: tag[0] | append: '/' | relative_url }}">
+        <span>{{ tag[0] }}</span><b>{{ tag[1].size }}</b><i aria-hidden="true">↗</i>
       </a>
-  </li>
-{% endfor %}
-</ul>
+    {% endfor %}
+  </div>
+</div>
